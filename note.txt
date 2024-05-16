@@ -1,0 +1,10 @@
+
+
+
+fonts list
+1. Manrope
+2. Kanit
+
+
+font-family: "Kanit", sans-serif;
+font-family: "Manrope", sans-serif;
