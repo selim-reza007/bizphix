@@ -8,3 +8,9 @@ fonts list
 
 font-family: "Kanit", sans-serif;
 font-family: "Manrope", sans-serif;
+
+body {
+    overflow-x: hidden;
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+}
