@@ -13,6 +13,10 @@ body {
     font-style: normal;
 }
 
+.display-none {
+    display: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -397,6 +401,7 @@ a {
 
 .approach {
     padding: 160px 0;
+
     .approach__content-wrapper {
         display: flex;
         flex-direction: column;
@@ -504,7 +509,9 @@ a {
     margin-top: 32px;
 }
 
-.faq {
+
+
+/* .faq {
     padding: 160px 0;
     position: relative;
 
@@ -551,6 +558,98 @@ a {
                             font-family: "Manrope", sans-serif;
                             font-weight: 500;
                             line-height: 25.6px;
+                        }
+                    }
+                }
+            }
+
+            .faq__queries {
+                display: block;
+                padding-bottom: 4px;
+                text-decoration: underline;
+                text-align: center;
+                color: #583CEA;
+                line-height: 16px;
+                margin-top: 48px;
+            }
+        }
+    }
+} */
+
+.faq {
+    padding: 160px 0;
+
+    .container {
+        width: 70%;
+        max-width: 850px;
+
+        .faq__content-wrapper {
+            .faq__heading {
+                color: #0D0B19;
+                text-align: center;
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 57.6px;
+                white-space: pre-line;
+                margin-bottom: 60px;
+            }
+
+            .faq__info-conatiner {
+                .faq__faques {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    .faq__item {
+                        border-radius: 1px;
+                        background: #F7F7F7;
+                        padding: 24px;
+
+                        &.faq__border {
+                            border-bottom: 2px solid #A89AF4;
+                        }
+
+
+                        .faq__title {
+                            /* position: relative; */
+                            color: #0D0B19;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 26px;
+                            width: 100%;
+                            cursor: pointer;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            &.active {
+                                color: #583CEA;
+                            }
+
+                            &:hover {
+                                color: #583CEA;
+                            }
+
+                            .faq__down-arrow {
+                                /* visibility: hidden; */
+                                /* position: absolute;
+                                top: 3px;
+                                right: 0; */
+                            }
+                        }
+
+                        .pannel {
+                            max-height: 0;
+                            overflow: hidden;
+                            transition: max-height 0.2s ease-out;
+
+                            .faq__info {
+                                color: #5D5C65;
+                                font-family: "Manrope", sans-serif;
+                                font-weight: 500;
+                                line-height: 25.6px;
+                                margin-top: 16px;
+                            }
                         }
                     }
                 }
