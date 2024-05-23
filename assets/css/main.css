@@ -1,0 +1,162 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.display-none {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.display-none {
+    visibility: hidden;
+    /* transition: all 0.5s ease-in-out; */
+}
+
+.btn {
+    display: inline-block;
+    padding: 16px 36px;
+    border-radius: 60px;
+    border: 1px solid #583CEA;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.btn-blue {
+    background: #583CEA;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-white {
+    background: #fff;
+    color: #583CEA;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-blue:hover {
+    background: #fff;
+    color: #583CEA;
+}
+
+.btn-white:hover {
+    background: #583CEA;
+    color: #fff;
+}
+
+.highlight-blue {
+    color: #583CEA;
+}
+
+.container {
+    width: 90%;
+    max-width: 1286px;
+    margin: 0 auto;
+}
+
+
+.testimonial {
+    background: #F7F6FE;
+    padding: 160px 0 80px 0;
+
+    .testimonial__content-wrapper {
+        .testimonial__heading {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 57.6px;
+            text-align: center;
+            color: #0D0B19;
+
+        }
+
+        .testimonial__box-container {
+            display: flex;
+            gap: 30px;
+            margin-top: 60px;
+
+            .testimonial__box {
+                width: 33.33%;
+
+                .testimonial__message-container {
+                    padding: 32px;
+                    position: relative;
+                    background: #FFFFFF;
+                    border-radius: 8px;
+
+                    .testimonial__message {
+                        font-family: "Manrope", sans-serif;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 28.8px;
+                        color: #5D5C65;
+                    }
+
+                    .testimonial__message-icon1 {
+                        position: absolute;
+                        bottom: -30px;
+                        left: 52px;
+                    }
+
+                    .testimonial__message-icon2 {
+                        position: absolute;
+                        bottom: 0;
+                        right: 25px;
+                    }
+
+                }
+
+                .testimonial__customer-info {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    margin-top: 40px;
+                    margin-left: 32px;
+
+                    .testimonial__customer-img {
+                        .testominial__img {
+                            /* height: 72px;
+                            width: 72px; */
+                            /* border-radius: 285px; */
+                            /* object-fit: cover; */
+                            /* object-position: top; */
+                        }
+                    }
+
+                    .testimonial__customer-data {
+                        .testimonial__name {
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 26px;
+                            color: #0D0B19;
+                        }
+
+                        .testimonial__designation {
+                            font-family: "Manrope", sans-serif;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 22.4px;
+                            color: #5D5C65;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

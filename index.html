@@ -13,27 +13,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <section class="header">
+    <!-- header/top navigation -->
+    <header class="header">
         <div class="container">
-            <div class="header__content-wrapper">
+            <!-- Desktop heading -->
+            <div class="header__content-wrapper header__desktop">
                 <div class="header__logo">
                     <a href="#"><img src="assets/img/Logo.png" alt="Bizphix logo"></a>
                 </div>
+                <!-- containing links  -->
                 <div class="header__navigation-container">
                     <ul class="header__navigation">
                         <li class="header__li"><a class="header__link" href="#">Home</a></li>
                         <li class="header__li"><a class="header__link" href="#">About</a></li>
                         <li class="header__li"><a class="header__link" href="#">Services &nbsp;
                                 <i class="fa-solid fa-angle-down"></i></a>
+                            <!-- dropdown -->
                             <ul class="header__dropdown">
-                                <li class="header__li"><a class="header__link" href="#">Web Development</a></li>
-                                <li class="header__li"><a class="header__link" href="#">Web Design</a></li>
-                                <li class="header__li"><a class="header__link" href="#">Illustration</a></li>
-                                <li class="header__li"><a class="header__link" href="#">Iconography</a></li>
+                                <li class="header__li"><a class="header__link" href="#">Clipping Path</a></li>
+                                <li class="header__li"><a class="header__link" href="#">Image Masking</a></li>
+                                <li class="header__li"><a class="header__link" href="#">Ghost Mannequin</a></li>
+                                <li class="header__li"><a class="header__link" href="#">Jewelry Retouching</a></li>
+                                <li class="header__li"><a class="header__link" href="#">Shadow Services</a></li>
+                                <li class="header__li"><a class="header__link" href="#">Product Photo Retouching</a>
+                                </li>
                             </ul>
                         </li>
 
@@ -42,6 +51,7 @@
                         <li class="header__li"><a class="header__link" href="#">Blog</a></li>
                     </ul>
                 </div>
+                <!-- header search section -->
                 <div class="header__search-container">
                     <div class="header__search">
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -49,626 +59,816 @@
                     <a href="#" class="btn btn-blue btn-search">Get Started</a>
                 </div>
             </div>
+
+            <!-- mobile header -->
+            <div class="header__mobile-menu-wrapper">
+                <a href="#">
+                    <img class="header__mobile-logo" src="assets/img/Logo.png" alt="logo in mobile view">
+                </a>
+                <div class="header__search-container-m">
+                    <i class="fa-solid fa-magnifying-glass .header__search-m"></i>
+                    <i class="fa-solid fa-bars header__menu-open-m"></i>
+                    <i class="fa-solid fa-xmark header__mobile-menu-close display-nothing"></i>
+                </div>
+                <!-- links -->
+                <div class="header__menu-m display-nothing">
+                    <ul class="header__ul-m">
+
+                        <li class="header__li-m">
+                            <a class="header__link-m" href="#">Home</a>
+                        </li>
+
+                        <li class="header__li-m">
+                            <a class="header__link-m" href="#">About</a>
+                        </li>
+
+                        <li class="header__li-m dropdown-open-close">
+                            <a class="header__link-m" href="#">Services
+                                <i class="fa-solid fa-angle-down"></i></a>
+                            <!-- dropdown -->
+                            <ul class="header__dropdown-m display-nothing">
+                                <li class="header__li-m"><a class="header__link-m" href="#">Clipping Path</a></li>
+                                <li class="header__li-m"><a class="header__link-m" href="#">Image Masking</a></li>
+                                <li class="header__li-m"><a class="header__link-m" href="#">Ghost Mannequin</a></li>
+                                <li class="header__li-m"><a class="header__link-m" href="#">Jewelry Retouching</a></li>
+                                <li class="header__li-m"><a class="header__link-m" href="#">Shadow Services</a></li>
+                                <li class="header__li-m"><a class="header__link-m" href="#">Product Photo Retouching</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="header__li-m">
+                            <a class="header__link-m" href="#">Protfolio</a>
+                        </li>
+
+                        <li class="header__li-m">
+                            <a class="header__link-m" href="#">Pricing</a>
+                        </li>
+
+                        <li class="header__li-m">
+                            <a class="header__link-m" href="#">Blog</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+
         </div>
         <p class="horizontalLine"></p>
-    </section>
+    </header>
 
-    <div class="hero">
-        <div class="container">
-            <div class="hero__content-wrapper">
-                <div class="hero__info">
-                    <h1 class="hero__title">Wake up to <span class="highlight-blue">perfectly
-                            edited</span> product photos</h1>
-                    <p class="hero__description">
-                        We specialize in transforming images, from eCommerce product <br> enhancements to captivating
-                        portraits and branding.
-                    </p>
-                    <div class="hero__btn-container">
-                        <a href="#" class="btn btn-blue">Free Trial</a>
-                        <a href="#" class="btn btn-white">Order Now</a>
-                    </div>
-                    <div class="hero__reviev">
-                        <div class="hero__review-img">
-                            <img src="assets/img/review.png" alt="Hero review">
-                        </div>
-                        <p class="hero__rating">Rated 4.9 of 5</p>
-                        <p class="hero__rating-info">Based on 4k+ review</p>
-                    </div>
-                </div>
-                <div class="hero__img">
-                    <div class="hero__img-container">
-                        <img src="assets/img/hero_img.png" alt="hero image">
-                        <div class="hero__play">
-                            <img class="hero__play-img" src="assets/img/svg/play_buton.svg" alt="play button">
-                        </div>
-                    </div>
+    <main id="main__content" role="main">
 
-                </div>
-            </div>
-            <div class="hero__video display-none">
-                <video src="assets/video/promotion_video.mp4" controls muted></video>
-                <i class="fa-solid fa-xmark hero__video-close"></i>
-            </div>
-        </div>
-    </div>
-
-    <section class="statistics">
-        <div class="container">
-            <div class="statistics__content-wrapper">
-                <div class="statistics__box">
-                    <div class="statistics__number">
-                        <p class="statistics__p num1">3000</p>
-                        <img class="statistics__icon" src="assets/img/svg/+.svg" alt="plus icon">
-                    </div>
-                    <p class="statistics__title">Client Seved</p>
-                </div>
-
-                <div class="statistics__box">
-                    <div class="statistics__number">
-                        <p class="statistics__p num2">90</p>
-                        <img class="statistics__icon" src="assets/img/svg/%.svg" alt="plus icon">
-                    </div>
-                    <p class="statistics__title">Customer Satisfaction</p>
-                </div>
-
-                <div class="statistics__box">
-                    <div class="statistics__number">
-                        <p class="statistics__p num3">25</p>
-                        <img class="statistics__icon" src="assets/img/svg/+.svg" alt="plus icon">
-                    </div>
-                    <p class="statistics__title">Experienced Members</p>
-                </div>
-
-                <div class="statistics__box">
-                    <div class="statistics__number">
-                        <p class="statistics__p num4">10</p>
-                        <img class="statistics__icon" src="assets/img/svg/+.svg" alt="plus icon">
-                    </div>
-                    <p class="statistics__title">Years of Experience</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="benefit">
-        <img class="benefit__background-img" src="assets/img/svg/benefit_background.svg" alt="benefit background">
-        <div class="container">
-            <div class="benefit__content-wrapper">
-                <h1 class="benefit__header">Why Choose Our Expert <span class="highlight-blue">Image
-                        Processing</span> Services</h1>
-                <div class="benefit__card-container">
-
-                    <div class="benefit__card">
-                        <div class="benefit__logo">
-                            <img src="assets/img/svg/benefit_message.svg" alt="benefit logo">
-                        </div>
-                        <h4 class="benefit__title">Tailored Solutions for
-                            Unique Vision</h4>
-                        <p class="benefit__p">Choose us for your photo retouching needs because we boast a
-                            team of highly skilled professionals.</p>
-                    </div>
-
-                    <div class="benefit__card">
-                        <div class="benefit__logo">
-                            <img src="assets/img/svg/benefit_star.svg" alt="benefit logo">
-                        </div>
-                        <h4 class="benefit__title">Rapid Results But We Don’t
-                            Compromise</h4>
-                        <p class="benefit__p">Choose us for your photo retouching needs because we boast a
-                            team of highly skilled professionals.</p>
-                    </div>
-
-                    <div class="benefit__card">
-                        <div class="benefit__logo">
-                            <img src="assets/img/svg/benefit_like.svg" alt="benefit logo">
-                        </div>
-                        <h4 class="benefit__title">Expertise Beyond Compare
-                            to Others</h4>
-                        <p class="benefit__p">Choose us for your photo retouching needs because we boast a
-                            team of highly skilled professionals.</p>
-                    </div>
-
-                    <div class="benefit__card">
-                        <div class="benefit__logo">
-                            <img src="assets/img/svg/benefit_video.svg" alt="benefit logo">
-                        </div>
-                        <h4 class="benefit__title">Tech-Driven Excellence in
-                            Every Pixel</h4>
-                        <p class="benefit__p">Choose us for your photo retouching needs because we boast a
-                            team of highly skilled professionals.</p>
-                    </div>
-
-                    <div class="benefit__card">
-                        <div class="benefit__logo">
-                            <img src="assets/img/svg/benefit_clock.svg" alt="benefit logo">
-                        </div>
-                        <h4 class="benefit__title">Meticulous Quality Control
-                            for Perfection</h4>
-                        <p class="benefit__p">Choose us for your photo retouching needs because we boast a
-                            team of highly skilled professionals.</p>
-                    </div>
-
-                    <div class="benefit__card">
-                        <div class="benefit__logo">
-                            <img src="assets/img/svg/benefit_bazar.svg" alt="benefit logo">
-                        </div>
-                        <h4 class="benefit__title">Accessible Brilliance at
-                            Affordable Rates</h4>
-                        <p class="benefit__p">Choose us for your photo retouching needs because we boast a
-                            team of highly skilled professionals.</p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="service">
-        <div class="service__container">
-            <div class="service__content-wrapper">
-                <h2 class="service__heading">It’s Not Magic! It’s <span class="highlight-blue">Bizphix</span><br>
-                    Unlocking Possibilities with Us</h2>
-                <div class="service__card-container">
-                    <!-- card1 -->
-                    <div class="service__card">
-                        <div class="service__img-container">
-                            <a class="service__link" href="#">
-                                <img class="service__img" src="assets/img//service/service_1.png" alt="service image">
-                            </a>
-                        </div>
-                        <div class="service__info-container service__info-1">
-                            <a href="#">
-                                <h3 class="service__name">Fashion</h3>
-                            </a>
-                            <p class="service__info">Pricing start at $1.50</p>
-                        </div>
-                    </div>
-                    <!-- card2 -->
-                    <div class="service__card">
-                        <div class="service__img-container">
-                            <a class="service__link" href="#">
-                                <img class="service__img" src="assets/img//service/service_2.png" alt="service image">
-                            </a>
-                        </div>
-                        <div class="service__info-container service__info-2">
-                            <a href="#">
-                                <h3 class="service__name">Product</h3>
-                            </a>
-                            <p class="service__info">Pricing start at $1.50</p>
-                        </div>
-                    </div>
-                    <!-- card3 -->
-                    <div class="service__card">
-                        <div class="service__img-container">
-                            <a class="service__link" href="#">
-                                <img class="service__img" src="assets/img/service/service_3.png" alt="service image">
-                            </a>
-                        </div>
-                        <div class="service__info-container service__info-3">
-                            <a href="#">
-                                <h3 class="service__name">Wedding</h3>
-                            </a>
-                            <p class="service__info">Pricing start at $1.50</p>
-                        </div>
-                    </div>
-                    <!-- card4 -->
-                    <div class="service__card">
-                        <div class="service__img-container">
-                            <a class="service__link" href="#">
-                                <img class="service__img" src="assets/img/service/service_4.png" alt="service image">
-                            </a>
-                        </div>
-                        <div class="service__info-container service__info-4">
-                            <a href="#">
-                                <h3 class="service__name">Lifestyle</h3>
-                            </a>
-                            <p class="service__info">Pricing start at $1.50</p>
-                        </div>
-                    </div>
-                    <!-- card5 -->
-                    <div class="service__card">
-                        <div class="service__img-container">
-                            <a class="service__link" href="#">
-                                <img class="service__img" src="assets/img/service/service_3.png" alt="service image">
-                            </a>
-                        </div>
-                        <div class="service__info-container service__info-4">
-                            <a href="#">
-                                <h3 class="service__name">Fashion</h3>
-                            </a>
-                            <p class="service__info">Pricing start at $1.50</p>
-                        </div>
-                    </div>
-                    <!-- card6 -->
-                    <div class="service__card">
-                        <div class="service__img-container">
-                            <a class="service__link" href="#">
-                                <img class="service__img" src="assets/img/service/service_6.png" alt="service image">
-                            </a>
-                        </div>
-                        <div class="service__info-container service__info-5">
-                            <a href="#">
-                                <h3 class="service__name">Image Masking</h3>
-                            </a>
-                            <p class="service__info">Pricing start at $1.50</p>
-                        </div>
-                    </div>
-                    <!-- card7 -->
-                    <div class="service__card">
-                        <div class="service__img-container">
-                            <a class="service__link" href="#">
-                                <img class="service__img" src="assets/img/service//service_4.png" alt="service image">
-                            </a>
-                        </div>
-                        <div class="service__info-container service__info-6">
-                            <a href="#">
-                                <h3 class="service__name">Color Change</h3>
-                            </a>
-                            <p class="service__info">Pricing start at $1.50</p>
-                        </div>
-                    </div>
-                    <!-- card8 -->
-                    <div class="service__card">
-                        <div class="service__img-container">
-                            <a class="service__link" href="#">
-                                <img class="service__img" src="assets/img/service/service_8.png" alt="service image">
-                            </a>
-                        </div>
-                        <div class="service__info-container service__info-1">
-                            <a href="#">
-                                <h3 class="service__name">Fashion</h3>
-                            </a>
-                            <p class="service__info">Pricing start at $1.50</p>
-                        </div>
-                    </div>
-
-                </div>
-                <a class="btn btn-blue service__btn" href="#">View More</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="promotion">
-        <div class="container">
-            <div class="promotion__content--wrapper">
-                <div class="promotion__text-container">
-                    <div class="promotion__heading">
-                        <h1 class="promotion__h1">We’re Your <span class="highlight-blue">Virtual Photo
-                                Editing</span> and Design Studio</h1>
-                    </div>
-                    <div class="promotion__info">
-                        <p class="promotion__info-top">
-                            Welcome to Bizphix, your trusted partner in the world of image
-                            processing and enhancement. In an era where visuals speak
-                            louder than words. Businesses looking to showcase their
-                            products can rely on our specialized product photo editing
-                            while those with cherished memories can trust us with the
-                            delicate art of photo restoration.
+        <!-- hero area, contains h1 tags and hero image -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content-wrapper">
+                    <!-- containing heading, info and review -->
+                    <div class="hero__info">
+                        <h1 class="hero__title">Wake up to <span class="highlight-blue">perfectly
+                                edited</span> product photos</h1>
+                        <p class="hero__description">
+                            We specialize in transforming images, from eCommerce product enhancements to
+                            captivating
+                            portraits and branding.
                         </p>
-                        <p class="promotion__info-bottom">
-                            Businesses looking to showcase their products can rely on our
-                            specialized product photo editing, while those with cherished memories.
-                        </p>
+                        <div class="hero__btn-container">
+                            <a href="#" class="btn btn-blue">Free Trial</a>
+                            <a href="#" class="btn btn-white">Order Now</a>
+                        </div>
+                        <!-- containing rview section -->
+                        <div class="hero__reviev">
+                            <div class="hero__review-img">
+                                <img src="assets/img/review.png" alt="Hero review">
+                            </div>
+                            <p class="hero__rating">Rated 4.9 of 5</p>
+                            <p class="hero__rating-info">Based on 4k+ review</p>
+                        </div>
                     </div>
-                </div>
-                <div class="promotion__video">
-                    <video autoplay muted src="assets/video/promotion_video.mp4"></video>
+
+                    <!-- hero image -->
+                    <div class="hero__img">
+                        <div class="hero__img-container">
+                            <img src="assets/img/hero_img.png" alt="hero image">
+                            <div class="hero__play">
+                                <a class="video" href="https://www.youtube.com/watch?v=eACEHVceYl0">
+                                    <img class="hero__play-img" src="assets/img/svg/play_buton.svg" alt="play button">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="clients">
-        <div class="container">
-            <div class="client__content-wrapper">
-                <div class="client__img-container">
-                    <a href="#" class="client__link">
-                        <img src="assets/img/clients/Adobe.png" alt="our client">
-                    </a>
-                </div>
-                <div class="client__img-container">
-                    <a href="#" class="client__link">
-                        <img src="assets/img/clients/AT.png" alt="our client">
-                    </a>
-                </div>
-                <div class="client__img-container">
-                    <a href="#" class="client__link">
-                        <img src="assets/img/clients/Cisco.png" alt="our client">
-                    </a>
-                </div>
-                <div class="client__img-container">
-                    <a href="#" class="client__link">
-                        <img src="assets/img/clients/Google.png" alt="our client">
-                    </a>
-                </div>
-                <div class="client__img-container">
-                    <a href="#" class="client__link">
-                        <img src="assets/img/clients/hp.png" alt="our client">
-                    </a>
-                </div>
-                <div class="client__img-container">
-                    <a href="#" class="client__link">
-                        <img src="assets/img/clients/Microsoft.png" alt="our client">
-                    </a>
-                </div>
-                <div class="client__img-container">
-                    <a href="#" class="client__link">
-                        <img src="assets/img/clients/SAP.png" alt="our client">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="approach">
-        <div class="container">
-            <div class="approach__content-wrapper">
-                <h1 class="approach__heading">Our Approach for Crafting
-                    <span class="highlight-blue">Customer-Centric</span> Magic
-                </h1>
-                <div class="approach__card-container">
-
-                    <div class="approach__single-card">
-                        <div class="approach__card-left">
-                            <div class="approach__icon-container">
-                                <img src="assets/img/svg/approach_like.svg" alt="approach icon" class="approach__icon">
-                            </div>
-                            <h4 class="approach__card-header">Learn At Your <br>Own Pace</h4>
-                            <p class="approach__card-info">Learn on your terms, but never
-                                alone. Enjoy lifetime <br>access to your course and free course updates.</p>
-                            <img class="approach__card-img" src="./assets/img/1.png" alt="approach image 1">
+        <!-- statistics boxes where numbers are shown -->
+        <section class="statistics">
+            <div class="container">
+                <!-- wrapping all single statistics boxes -->
+                <div class="statistics__content-wrapper">
+                    <!-- single statistics box -->
+                    <div class="statistics__box">
+                        <div class="statistics__number">
+                            <p class="statistics__p num1">3000</p>
+                            <!-- plus or % icon -->
+                            <img class="statistics__icon" src="assets/img/svg/+.svg" alt="plus icon">
                         </div>
-
-                        <div class="approach__card-right">
-                            <img src="assets/img/approach1.png" alt="approach card image" class="approach__card-img">
-                        </div>
+                        <p class="statistics__title">Client Seved</p>
                     </div>
-
-                    <div class="approach__single-card">
-                        <div class="approach__card-right">
-                            <img src="assets/img/approach2.png" alt="approach card image" class="approach__card-img">
+                    <!-- single statistics box -->
+                    <div class="statistics__box">
+                        <div class="statistics__number">
+                            <p class="statistics__p num2">90</p>
+                            <!-- plus or % icon -->
+                            <img class="statistics__icon" src="assets/img/svg/%.svg" alt="plus icon">
                         </div>
-
-                        <div class="approach__card-left">
-                            <div class="approach__icon-container">
-                                <img src="assets/img/svg/approach_like.svg" alt="approach icon" class="approach__icon">
-                            </div>
-                            <h4 class="approach__card-header">Learn At Your <br>Own Pace</h4>
-                            <p class="approach__card-info">Learn on your terms, but never
-                                alone. Enjoy lifetime <br>access to your course and free course updates.</p>
-                            <img class="approach__card-img" src="./assets/img/2.png" alt="approach image 1">
-                        </div>
+                        <p class="statistics__title">Customer Satisfaction</p>
                     </div>
-
-                    <div class="approach__single-card">
-                        <div class="approach__card-left">
-                            <div class="approach__icon-container">
-                                <img src="assets/img/svg/approach_like.svg" alt="approach icon" class="approach__icon">
-                            </div>
-                            <h4 class="approach__card-header">Learn At Your <br>Own Pace</h4>
-                            <p class="approach__card-info">Learn on your terms, but never
-                                alone. Enjoy lifetime <br>access to your course and free course updates.</p>
-                            <img class="approach__card-img" src="./assets/img/3.png" alt="approach image 1">
+                    <!-- single statistics box -->
+                    <div class="statistics__box">
+                        <div class="statistics__number">
+                            <p class="statistics__p num3">25</p>
+                            <!-- plus or % icon -->
+                            <img class="statistics__icon" src="assets/img/svg/+.svg" alt="plus icon">
                         </div>
-
-                        <div class="approach__card-right">
-                            <img src="assets/img/approach3.png" alt="approach card image" class="approach__card-img">
-                        </div>
+                        <p class="statistics__title">Experienced Members</p>
                     </div>
-
-
-
-                </div>
-                <a class="btn btn-blue btn-center" href="#">Start Your First Trial</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="testimonial">
-        <div class="container">
-            <div class="testimonial__content-wrapper">
-                <h2 class="testimonial__heading">Happy <span class="highlight-blue">Customer
-                        Feedback</span> <br> About Our Service</h2>
-                <div class="testimonial__box-container">
-
-                    <div class="testimonial__box single__testimonial">
-                        <div class="testimonial__message-container">
-                            <p class="testimonial__message">Experience a transformative touch to your images with
-                                Bizphix. Their color correction and lightning-fast turnaround elevated my visuals to new
-                                heights. For precision and speed in image impeccable enhancement, look no further than
-                                this agency. Trust Bizphix to bring out the best in your visuals.</p>
-                            <img class="testimonial__message-icon1" src="assets/img/svg/testimonial_down_shape.svg"
-                                alt="testimonail message icon 1">
-                            <img class="testimonial__message-icon2" src="assets/img/svg/testimonial_quote.svg"
-                                alt="testimonail message icon 2">
+                    <!-- single statistics box -->
+                    <div class="statistics__box">
+                        <div class="statistics__number">
+                            <p class="statistics__p num4">10</p>
+                            <!-- plus or % icon -->
+                            <img class="statistics__icon" src="assets/img/svg/+.svg" alt="plus icon">
                         </div>
-                        <div class="testimonial__customer-info">
-                            <div class="testimonial__customer-img">
-                                <img class="testominial__img" src="assets/img/customer/image-1.png"
-                                    alt="customer image">
-                            </div>
-                            <div class="testimonial__customer-data">
-                                <h5 class="testimonial__name">Cameron Williamson</h5>
-                                <p class="testimonial__designation">Founder of Yokoloko</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial__box single__testimonial">
-                        <div class="testimonial__message-container">
-                            <p class="testimonial__message">Experience a transformative touch to your images with
-                                Bizphix. Their color correction and lightning-fast turnaround elevated my visuals to new
-                                heights. For precision and speed in image impeccable enhancement, look no further than
-                                this agency. Trust Bizphix to bring out the best in your visuals.</p>
-                            <img class="testimonial__message-icon1" src="assets/img/svg/testimonial_down_shape.svg"
-                                alt="testimonail message icon 1">
-                            <img class="testimonial__message-icon2" src="assets/img/svg/testimonial_quote.svg"
-                                alt="testimonail message icon 2">
-                        </div>
-                        <div class="testimonial__customer-info">
-                            <div class="testimonial__customer-img">
-                                <img class="testominial__img" src="assets/img/customer/image-2.png"
-                                    alt="customer image">
-                            </div>
-                            <div class="testimonial__customer-data">
-                                <h5 class="testimonial__name">Brooklyn Simmons</h5>
-                                <p class="testimonial__designation">Founder of Yokoloko</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial__box single__testimonial">
-                        <div class="testimonial__message-container">
-                            <p class="testimonial__message">Experience a transformative touch to your images with
-                                Bizphix. Their color correction and lightning-fast turnaround elevated my visuals to new
-                                heights. For precision and speed in image impeccable enhancement, look no further than
-                                this agency. Trust Bizphix to bring out the best in your visuals.</p>
-                            <img class="testimonial__message-icon1" src="assets/img/svg/testimonial_down_shape.svg"
-                                alt="testimonail message icon 1">
-                            <img class="testimonial__message-icon2" src="assets/img/svg/testimonial_quote.svg"
-                                alt="testimonail message icon 2">
-                        </div>
-                        <div class="testimonial__customer-info">
-                            <div class="testimonial__customer-img">
-                                <img class="testominial__img" src="assets/img/customer/image-3.png"
-                                    alt="customer image">
-                            </div>
-                            <div class="testimonial__customer-data">
-                                <h5 class="testimonial__name">Leslie Alexander</h5>
-                                <p class="testimonial__designation">Founder of Yokoloko</p>
-                            </div>
-                        </div>
+                        <p class="statistics__title">Years of Experience</p>
                     </div>
 
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- slider addition is pending -->
+        </section>
 
-    <section class="faq">
-        <img class="faq__background-img" src="assets/img/svg/benefit_background.svg" alt="background image">
-        <div class="container">
-            <div class="faq__content-wrapper">
-                <h1 class="faq__heading">Your Comprehensive Guide
-                    to Common <span class="highlight-blue">Inquiries</span></h1>
-                <div class="faq__info-conatiner">
-                    <div class="faq__faques">
+        <!-- benefit card container -->
+        <section class="benefit">
+            <img class="benefit__background-img" src="assets/img/svg/benefit_background.svg" alt="benefit background">
+            <div class="container">
+                <!-- containing all single benefits boxes within grid -->
+                <div class="benefit__content-wrapper">
+                    <h2 class="benefit__header">Why Choose Our Expert <span class="highlight-blue">Image
+                            Processing</span> Services</h2>
+                    <div class="benefit__card-container">
 
-                        <div class="faq__item">
-                            <h4 class="faq__title">What is photo retouching, and how does
-                                it differ from basic photo editing?
-                                <i class="fa-solid fa-chevron-down faq__down-arrow"></i>
-                                <!-- <i class="fa-solid fa-greater-than faq__up-apprrow display-none"></i> -->
-                            </h4>
-
-                            <div class="pannel">
-                                <p class="faq__info">Our photo retouching service is versatile and
-                                    can be applied to various types of images, including
-                                    portraits, product shots, event photos, and more. Whether
-                                    it's for personal or commercial use, we can enhance the visual
-                                    appeal of your photos. You can easily submit your photos for
-                                    retouching through our online platform. Simply
-                                    create an account, upload your images, and provide any
-                                    specific instructions or preferences you have for the retouching process.</p>
+                        <div class="benefit__card">
+                            <!-- benefit section logo -->
+                            <div class="benefit__logo">
+                                <img src="assets/img/svg/benefit_message.svg" alt="benefit logo">
                             </div>
+                            <h4 class="benefit__title">Tailored Solutions for
+                                Unique Vision</h4>
+                            <p class="benefit__p">Choose us for your photo retouching needs because we boast a
+                                team of highly skilled professionals.</p>
                         </div>
 
-                        <div class="faq__item">
-                            <h4 class="faq__title">What types of images can be retouched?<i
-                                    class="fa-solid fa-chevron-down faq__down-arrow"></i>
-                                <!-- <i class="fa-solid fa-greater-than faq__up-apprrow display-none"></i> -->
-                            </h4>
-
-                            <div class="pannel">
-                                <p class="faq__info">Our photo retouching service is versatile and
-                                    can be applied to various types of images, including
-                                    portraits, product shots, event photos, and more. Whether
-                                    it's for personal or commercial use, we can enhance the visual
-                                    appeal of your photos. You can easily submit your photos for
-                                    retouching through our online platform. Simply
-                                    create an account, upload your images, and provide any
-                                    specific instructions or preferences you have for the retouching process.</p>
+                        <div class="benefit__card">
+                            <!-- benefit section logo -->
+                            <div class="benefit__logo">
+                                <img src="assets/img/svg/benefit_star.svg" alt="benefit logo">
                             </div>
+                            <h4 class="benefit__title">Rapid Results But We Don’t
+                                Compromise</h4>
+                            <p class="benefit__p">Choose us for your photo retouching needs because we boast a
+                                team of highly skilled professionals.</p>
                         </div>
 
-                        <div class="faq__item">
-                            <h4 class="faq__title">How can I submit my photos for retouching?<i
-                                    class="fa-solid fa-chevron-down faq__down-arrow"></i>
-                                <!-- <i class="fa-solid fa-greater-than faq__up-apprrow display-none"></i> -->
-                            </h4>
-
-                            <div class="pannel">
-                                <p class="faq__info">Our photo retouching service is versatile and
-                                    can be applied to various types of images, including
-                                    portraits, product shots, event photos, and more. Whether
-                                    it's for personal or commercial use, we can enhance the visual
-                                    appeal of your photos. You can easily submit your photos for
-                                    retouching through our online platform. Simply
-                                    create an account, upload your images, and provide any
-                                    specific instructions or preferences you have for the retouching process.</p>
+                        <div class="benefit__card">
+                            <!-- benefit section logo -->
+                            <div class="benefit__logo">
+                                <img src="assets/img/svg/benefit_like.svg" alt="benefit logo">
                             </div>
+                            <h4 class="benefit__title">Expertise Beyond Compare
+                                to Others</h4>
+                            <p class="benefit__p">Choose us for your photo retouching needs because we boast a
+                                team of highly skilled professionals.</p>
                         </div>
 
-                        <div class="faq__item">
-                            <h4 class="faq__title">What specific retouching techniques do you offer?<i
-                                    class="fa-solid fa-chevron-down faq__down-arrow"></i>
-                                <!-- <i class="fa-solid fa-greater-than faq__up-apprrow display-none"></i> -->
-                            </h4>
-
-                            <div class="pannel">
-                                <p class="faq__info">Our photo retouching service is versatile and
-                                    can be applied to various types of images, including
-                                    portraits, product shots, event photos, and more. Whether
-                                    it's for personal or commercial use, we can enhance the visual
-                                    appeal of your photos. You can easily submit your photos for
-                                    retouching through our online platform. Simply
-                                    create an account, upload your images, and provide any
-                                    specific instructions or preferences you have for the retouching process.</p>
+                        <div class="benefit__card">
+                            <!-- benefit section logo -->
+                            <div class="benefit__logo">
+                                <img src="assets/img/svg/benefit_video.svg" alt="benefit logo">
                             </div>
+                            <h4 class="benefit__title">Tech-Driven Excellence in
+                                Every Pixel</h4>
+                            <p class="benefit__p">Choose us for your photo retouching needs because we boast a
+                                team of highly skilled professionals.</p>
+                        </div>
+
+                        <div class="benefit__card">
+                            <!-- benefit section logo -->
+                            <div class="benefit__logo">
+                                <img src="assets/img/svg/benefit_clock.svg" alt="benefit logo">
+                            </div>
+                            <h4 class="benefit__title">Meticulous Quality Control
+                                for Perfection</h4>
+                            <p class="benefit__p">Choose us for your photo retouching needs because we boast a
+                                team of highly skilled professionals.</p>
+                        </div>
+
+                        <div class="benefit__card">
+                            <!-- benefit section logo -->
+                            <div class="benefit__logo">
+                                <img src="assets/img/svg/benefit_bazar.svg" alt="benefit logo">
+                            </div>
+                            <h4 class="benefit__title">Accessible Brilliance at
+                                Affordable Rates</h4>
+                            <p class="benefit__p">Choose us for your photo retouching needs because we boast a
+                                team of highly skilled professionals.</p>
                         </div>
 
                     </div>
                 </div>
-                <a class="faq__queries" href="#">Any Further Inquiries?</a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="joinus">
-        <div class="container">
+        <!-- service card container -->
+        <section class="service">
+            <div class="service__container">
+                <div class="service__content-wrapper">
+                    <h2 class="service__heading">It’s Not Magic! It’s <span class="highlight-blue">Bizphix</span>
+                        Unlocking Possibilities with Us</h2>
+                    <!-- single service container -->
+                    <div class="service__card-container">
+                        <!-- card1 -->
+                        <div class="service__card">
+                            <div class="service__img-container">
+                                <a class="service__link" href="#">
+                                    <!-- service image -->
+                                    <img class="service__img" src="assets/img//service/service_1.png"
+                                        alt="service image">
+                                </a>
+                            </div>
+                            <div class="service__info-container service__info-1">
+                                <a href="#">
+                                    <h3 class="service__name">Fashion</h3>
+                                </a>
+                                <p class="service__info">Pricing start at $1.50</p>
+                            </div>
+                        </div>
+                        <!-- card2 -->
+                        <div class="service__card">
+                            <div class="service__img-container">
+                                <a class="service__link" href="#">
+                                    <!-- service image -->
+                                    <img class="service__img" src="assets/img//service/service_2.png"
+                                        alt="service image">
+                                </a>
+                            </div>
+                            <div class="service__info-container service__info-2">
+                                <a href="#">
+                                    <h3 class="service__name">Product</h3>
+                                </a>
+                                <p class="service__info">Pricing start at $1.50</p>
+                            </div>
+                        </div>
+                        <!-- card3 -->
+                        <div class="service__card">
+                            <div class="service__img-container">
+                                <a class="service__link" href="#">
+                                    <!-- service image -->
+                                    <img class="service__img" src="assets/img/service/service_3.png"
+                                        alt="service image">
+                                </a>
+                            </div>
+                            <div class="service__info-container service__info-3">
+                                <a href="#">
+                                    <h3 class="service__name">Wedding</h3>
+                                </a>
+                                <p class="service__info">Pricing start at $1.50</p>
+                            </div>
+                        </div>
+                        <!-- card4 -->
+                        <div class="service__card">
+                            <div class="service__img-container">
+                                <a class="service__link" href="#">
+                                    <!-- service image -->
+                                    <img class="service__img" src="assets/img/service/service_4.png"
+                                        alt="service image">
+                                </a>
+                            </div>
+                            <div class="service__info-container service__info-4">
+                                <a href="#">
+                                    <h3 class="service__name">Lifestyle</h3>
+                                </a>
+                                <p class="service__info">Pricing start at $1.50</p>
+                            </div>
+                        </div>
+                        <!-- card5 -->
+                        <div class="service__card">
+                            <div class="service__img-container">
+                                <a class="service__link" href="#">
+                                    <!-- service image -->
+                                    <img class="service__img" src="assets/img/service/service_3.png"
+                                        alt="service image">
+                                </a>
+                            </div>
+                            <div class="service__info-container service__info-4">
+                                <a href="#">
+                                    <h3 class="service__name">Fashion</h3>
+                                </a>
+                                <p class="service__info">Pricing start at $1.50</p>
+                            </div>
+                        </div>
+                        <!-- card6 -->
+                        <div class="service__card">
+                            <div class="service__img-container">
+                                <a class="service__link" href="#">
+                                    <!-- service image -->
+                                    <img class="service__img" src="assets/img/service/service_6.png"
+                                        alt="service image">
+                                </a>
+                            </div>
+                            <div class="service__info-container service__info-5">
+                                <a href="#">
+                                    <h3 class="service__name">Image Masking</h3>
+                                </a>
+                                <p class="service__info">Pricing start at $1.50</p>
+                            </div>
+                        </div>
+                        <!-- card7 -->
+                        <div class="service__card">
+                            <div class="service__img-container">
+                                <a class="service__link" href="#">
+                                    <!-- service image -->
+                                    <img class="service__img" src="assets/img/service//service_4.png"
+                                        alt="service image">
+                                </a>
+                            </div>
+                            <div class="service__info-container service__info-6">
+                                <a href="#">
+                                    <h3 class="service__name">Color Change</h3>
+                                </a>
+                                <p class="service__info">Pricing start at $1.50</p>
+                            </div>
+                        </div>
+                        <!-- card8 -->
+                        <div class="service__card">
+                            <div class="service__img-container">
+                                <a class="service__link" href="#">
+                                    <!-- service image -->
+                                    <img class="service__img" src="assets/img/service/service_8.png"
+                                        alt="service image">
+                                </a>
+                            </div>
+                            <div class="service__info-container service__info-1">
+                                <a href="#">
+                                    <h3 class="service__name">Fashion</h3>
+                                </a>
+                                <p class="service__info">Pricing start at $1.50</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a class="btn btn-blue service__btn" href="#">View More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- promotion scetion contains information and video -->
+        <section class="promotion">
+            <div class="container">
+                <div class="promotion__content--wrapper">
+                    <div class="promotion__text-container">
+                        <div class="promotion__heading">
+                            <h2 class="promotion__h1">We’re Your <span class="highlight-blue">Virtual Photo
+                                    Editing</span> and Design Studio</h2>
+                        </div>
+                        <!-- promotion information container -->
+                        <div class="promotion__info">
+                            <p class="promotion__info-top">
+                                Welcome to Bizphix, your trusted partner in the world of image
+                                processing and enhancement. In an era where visuals speak
+                                louder than words. Businesses looking to showcase their
+                                products can rely on our specialized product photo editing
+                                while those with cherished memories can trust us with the
+                                delicate art of photo restoration.
+                            </p>
+                            <p class="promotion__info-bottom">
+                                Businesses looking to showcase their products can rely on our
+                                specialized product photo editing, while those with cherished memories.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- promotion section's video container -->
+                    <div class="promotion__video">
+                        <video autoplay muted src="assets/video/promotion_video.mp4"></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contain all brans logo -->
+        <section class="clients">
+            <div class="container">
+                <div class="client__content-wrapper">
+                    <div class="client__img-container">
+                        <a href="#" class="client__link">
+                            <!-- brand image -->
+                            <img src="assets/img/clients/Adobe.png" alt="our client">
+                        </a>
+                    </div>
+                    <div class="client__img-container">
+                        <a href="#" class="client__link">
+                            <!-- brand image -->
+                            <img src="assets/img/clients/AT.png" alt="our client">
+                        </a>
+                    </div>
+                    <div class="client__img-container">
+                        <a href="#" class="client__link">
+                            <!-- brand image -->
+                            <img src="assets/img/clients/Cisco.png" alt="our client">
+                        </a>
+                    </div>
+                    <div class="client__img-container">
+                        <a href="#" class="client__link">
+                            <!-- brand image -->
+                            <img src="assets/img/clients/Google.png" alt="our client">
+                        </a>
+                    </div>
+                    <div class="client__img-container">
+                        <a href="#" class="client__link">
+                            <!-- brand image -->
+                            <img src="assets/img/clients/hp.png" alt="our client">
+                        </a>
+                    </div>
+                    <div class="client__img-container">
+                        <a href="#" class="client__link">
+                            <!-- brand image -->
+                            <img src="assets/img/clients/Microsoft.png" alt="our client">
+                        </a>
+                    </div>
+                    <div class="client__img-container">
+                        <a href="#" class="client__link">
+                            <!-- brand image -->
+                            <img src="assets/img/clients/SAP.png" alt="our client">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- approach section combine of info and cover image -->
+        <section class="approach">
+            <div class="container">
+                <div class="approach__content-wrapper">
+                    <h2 class="approach__heading">Our Approach for Crafting
+                        <span class="highlight-blue">Customer-Centric</span> Magic
+                    </h2>
+                    <div class="approach__card-container">
+                        <!-- single approach section -->
+                        <div class="approach__single-card">
+                            <div class="approach__card-left">
+                                <div class="approach__icon-container">
+                                    <!-- approach section 1 icon -->
+                                    <img src="assets/img/svg/approach_like.svg" alt="approach icon"
+                                        class="approach__icon">
+                                </div>
+                                <h4 class="approach__card-header">Learn At Your Own Pace</h4>
+                                <p class="approach__card-info">Learn on your terms, but never
+                                    alone. Enjoy lifetime access to your course and free course updates.</p>
+                                <!-- approach section 1 bg image -->
+                                <img class="approach__card-img" src="./assets/img/1.png" alt="approach image 1">
+                            </div>
+
+                            <div class="approach__card-right">
+                                <!-- approach section 1 cover image -->
+                                <img src="assets/img/approach1.png" alt="approach card image"
+                                    class="approach__card-img">
+                            </div>
+                        </div>
+                        <!-- single approach section -->
+                        <div class="approach__single-card">
+                            <div class="approach__card-right">
+                                <!-- approach section 2 cover image -->
+                                <img src="assets/img/approach2.png" alt="approach card image"
+                                    class="approach__card-img">
+                            </div>
+
+                            <div class="approach__card-left">
+                                <div class="approach__icon-container">
+                                    <!-- approach section 2 icon -->
+                                    <img src="assets/img/svg/approach_like.svg" alt="approach icon"
+                                        class="approach__icon">
+                                </div>
+                                <h4 class="approach__card-header">Learn At Your Own Pace</h4>
+                                <p class="approach__card-info">Learn on your terms, but never
+                                    alone. Enjoy lifetime access to your course and free course updates.</p>
+                                <!-- approach section 2 bg image -->
+                                <img class="approach__card-img" src="./assets/img/2.png" alt="approach image 1">
+                            </div>
+                        </div>
+                        <!-- single approach section -->
+                        <div class="approach__single-card">
+                            <div class="approach__card-left">
+                                <div class="approach__icon-container">
+                                    <!-- approach section 3 icon -->
+                                    <img src="assets/img/svg/approach_like.svg" alt="approach icon"
+                                        class="approach__icon">
+                                </div>
+                                <h4 class="approach__card-header">Learn At Your Own Pace</h4>
+                                <p class="approach__card-info">Learn on your terms, but never
+                                    alone. Enjoy lifetime access to your course and free course updates.</p>
+                                <!-- approach section 3 bg image -->
+                                <img class="approach__card-img" src="./assets/img/3.png" alt="approach image 1">
+                            </div>
+
+                            <div class="approach__card-right">
+                                <!-- approach section 3 cover image -->
+                                <img src="assets/img/approach3.png" alt="approach card image"
+                                    class="approach__card-img">
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <a class="btn btn-blue btn-center" href="#">Start Your First Trial</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- contains happy customers feedback with slider -->
+        <section class="testimonial">
+            <div class="container">
+                <div class="testimonial__content-wrapper">
+                    <h2 class="testimonial__heading">Happy <span class="highlight-blue">Customer
+                            Feedback</span> About Our Service</h2>
+                    <!-- all single testimonial card container -->
+                    <div class="swiper mySwiper">
+                        <div class="testimonial__box-container swiper-wrapper">
+                            <!-- single testimonial box -->
+                            <div class="testimonial__box single__testimonial swiper-slide">
+                                <div class="testimonial__message-container">
+                                    <p class="testimonial__message">Experience a transformative touch to your images
+                                        with
+                                        Bizphix. Their color correction and lightning-fast turnaround elevated my
+                                        visuals to
+                                        new
+                                        heights. For precision and speed in image impeccable enhancement, look no
+                                        further
+                                        than
+                                        this agency. Trust Bizphix to bring out the best in your visuals.</p>
+                                    <!-- down shape -->
+                                    <img class="testimonial__message-icon1"
+                                        src="assets/img/svg/testimonial_down_shape.svg"
+                                        alt="testimonail message icon 1">
+                                    <!-- quotation shape -->
+                                    <img class="testimonial__message-icon2" src="assets/img/svg/testimonial_quote.svg"
+                                        alt="testimonail message icon 2">
+                                </div>
+                                <div class="testimonial__customer-info">
+                                    <div class="testimonial__customer-img">
+                                        <!-- customer image -->
+                                        <img class="testominial__img" src="assets/img/customer/image-1.png"
+                                            alt="customer image">
+                                    </div>
+                                    <div class="testimonial__customer-data">
+                                        <h5 class="testimonial__name">Cameron Williamson</h5>
+                                        <p class="testimonial__designation">Founder of Yokoloko</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single testimonial box -->
+                            <div class="testimonial__box single__testimonial swiper-slide">
+                                <div class="testimonial__message-container">
+                                    <p class="testimonial__message">Experience a transformative touch to your images
+                                        with
+                                        Bizphix. Their color correction and lightning-fast turnaround elevated my
+                                        visuals to
+                                        new
+                                        heights. For precision and speed in image impeccable enhancement, look no
+                                        further
+                                        than
+                                        this agency. Trust Bizphix to bring out the best in your visuals.</p>
+                                    <!-- down shape -->
+                                    <img class="testimonial__message-icon1"
+                                        src="assets/img/svg/testimonial_down_shape.svg"
+                                        alt="testimonail message icon 1">
+                                    <!-- quotation shape -->
+                                    <img class="testimonial__message-icon2" src="assets/img/svg/testimonial_quote.svg"
+                                        alt="testimonail message icon 2">
+                                </div>
+                                <div class="testimonial__customer-info">
+                                    <div class="testimonial__customer-img">
+                                        <!-- customer image -->
+                                        <img class="testominial__img" src="assets/img/customer/image-2.png"
+                                            alt="customer image">
+                                    </div>
+                                    <div class="testimonial__customer-data">
+                                        <h5 class="testimonial__name">Brooklyn Simmons</h5>
+                                        <p class="testimonial__designation">Founder of Yokoloko</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single testimonial box -->
+                            <div class="testimonial__box single__testimonial swiper-slide">
+                                <div class="testimonial__message-container">
+                                    <p class="testimonial__message">Experience a transformative touch to your images
+                                        with
+                                        Bizphix. Their color correction and lightning-fast turnaround elevated my
+                                        visuals to
+                                        new
+                                        heights. For precision and speed in image impeccable enhancement, look no
+                                        further
+                                        than
+                                        this agency. Trust Bizphix to bring out the best in your visuals.</p>
+                                    <!-- down shape -->
+                                    <img class="testimonial__message-icon1"
+                                        src="assets/img/svg/testimonial_down_shape.svg"
+                                        alt="testimonail message icon 1">
+                                    <!-- quotation shape -->
+                                    <img class="testimonial__message-icon2" src="assets/img/svg/testimonial_quote.svg"
+                                        alt="testimonail message icon 2">
+                                </div>
+                                <div class="testimonial__customer-info">
+                                    <div class="testimonial__customer-img">
+                                        <!-- customer image -->
+                                        <img class="testominial__img" src="assets/img/customer/image-3.png"
+                                            alt="customer image">
+                                    </div>
+                                    <div class="testimonial__customer-data">
+                                        <h5 class="testimonial__name">Leslie Alexander</h5>
+                                        <p class="testimonial__designation">Founder of Yokoloko</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single testimonial box -->
+                            <div class="testimonial__box single__testimonial swiper-slide">
+                                <div class="testimonial__message-container">
+                                    <p class="testimonial__message">Experience a transformative touch to your images
+                                        with
+                                        Bizphix. Their color correction and lightning-fast turnaround elevated my
+                                        visuals to
+                                        new
+                                        heights. For precision and speed in image impeccable enhancement, look no
+                                        further
+                                        than
+                                        this agency. Trust Bizphix to bring out the best in your visuals.</p>
+                                    <!-- down shape -->
+                                    <img class="testimonial__message-icon1"
+                                        src="assets/img/svg/testimonial_down_shape.svg"
+                                        alt="testimonail message icon 1">
+                                    <!-- quotation shape -->
+                                    <img class="testimonial__message-icon2" src="assets/img/svg/testimonial_quote.svg"
+                                        alt="testimonail message icon 2">
+                                </div>
+                                <div class="testimonial__customer-info">
+                                    <div class="testimonial__customer-img">
+                                        <!-- customer image -->
+                                        <img class="testominial__img" src="assets/img/customer/image-2.png"
+                                            alt="customer image">
+                                    </div>
+                                    <div class="testimonial__customer-data">
+                                        <h5 class="testimonial__name">Brooklyn Simmons</h5>
+                                        <p class="testimonial__designation">Founder of Yokoloko</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </section>
+
+        <!-- faq section contains accrodion -->
+        <section class="faq">
+            <!-- background image of top right -->
+            <img class="faq__background-img" src="assets/img/svg/benefit_background.svg" alt="background image">
+            <div class="container">
+                <div class="faq__content-wrapper">
+                    <h2 class="faq__heading">Your Comprehensive Guide
+                        to Common <span class="highlight-blue">Inquiries</span></h2>
+                    <div class="faq__info-conatiner">
+                        <div class="faq__faques">
+                            <!-- single faq section -->
+                            <div class="faq__item">
+                                <h5 class="faq__title">What is photo retouching, and how does
+                                    it differ from basic photo editing?
+                                    <i class="fa-solid fa-chevron-down faq__down-arrow"></i>
+                                </h5>
+
+                                <div class="pannel">
+                                    <p class="faq__info">Our photo retouching service is versatile and
+                                        can be applied to various types of images, including
+                                        portraits, product shots, event photos, and more. Whether
+                                        it's for personal or commercial use, we can enhance the visual
+                                        appeal of your photos. You can easily submit your photos for
+                                        retouching through our online platform. Simply
+                                        create an account, upload your images, and provide any
+                                        specific instructions or preferences you have for the retouching process.</p>
+                                </div>
+                            </div>
+                            <!-- single faq section -->
+                            <div class="faq__item">
+                                <h5 class="faq__title">What types of images can be retouched?<i
+                                        class="fa-solid fa-chevron-down faq__down-arrow"></i>
+                                </h5>
+
+                                <div class="pannel">
+                                    <p class="faq__info">Our photo retouching service is versatile and
+                                        can be applied to various types of images, including
+                                        portraits, product shots, event photos, and more. Whether
+                                        it's for personal or commercial use, we can enhance the visual
+                                        appeal of your photos. You can easily submit your photos for
+                                        retouching through our online platform. Simply
+                                        create an account, upload your images, and provide any
+                                        specific instructions or preferences you have for the retouching process.</p>
+                                </div>
+                            </div>
+                            <!-- single faq section -->
+                            <div class="faq__item">
+                                <h5 class="faq__title">How can I submit my photos for retouching?<i
+                                        class="fa-solid fa-chevron-down faq__down-arrow"></i>
+                                </h5>
+
+                                <div class="pannel">
+                                    <p class="faq__info">Our photo retouching service is versatile and
+                                        can be applied to various types of images, including
+                                        portraits, product shots, event photos, and more. Whether
+                                        it's for personal or commercial use, we can enhance the visual
+                                        appeal of your photos. You can easily submit your photos for
+                                        retouching through our online platform. Simply
+                                        create an account, upload your images, and provide any
+                                        specific instructions or preferences you have for the retouching process.</p>
+                                </div>
+                            </div>
+                            <!-- single faq section -->
+                            <div class="faq__item">
+                                <h5 class="faq__title">What specific retouching techniques do you offer?<i
+                                        class="fa-solid fa-chevron-down faq__down-arrow"></i>
+                                </h5>
+
+                                <div class="pannel">
+                                    <p class="faq__info">Our photo retouching service is versatile and
+                                        can be applied to various types of images, including
+                                        portraits, product shots, event photos, and more. Whether
+                                        it's for personal or commercial use, we can enhance the visual
+                                        appeal of your photos. You can easily submit your photos for
+                                        retouching through our online platform. Simply
+                                        create an account, upload your images, and provide any
+                                        specific instructions or preferences you have for the retouching process.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <a class="faq__queries" href="#">Any Further Inquiries?</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- join us section contain a world map with some info -->
+        <section class="joinus">
+            <!-- <div class="container"> -->
             <div class="joinus__content-wrapper">
+                <!-- Join us left info section -->
                 <div class="joinus__info">
                     <h2 class="joinus__h2">
                         <span class="highlight-blue">Join and Transform</span>
-                        your Possibilities
-                        Today!
+                        your Possibilities Today!
                     </h2>
                     <div class="joinus__btn">
                         <a class="btn btn-blue" href="#">Start Your First Trial</a>
                     </div>
                 </div>
                 <div class="joinus__map">
+                    <!-- join us right world image -->
                     <img src="assets/img/svg/world_map.svg" alt="world map">
                 </div>
             </div>
-        </div>
-    </section>
+            <!-- </div> -->
+        </section>
 
-    <section class="footer">
+    </main>
+
+    <footer class="footer">
         <div class="conainer">
+            <!-- divided the section into two major part. left and qick link -->
             <div class="footer__content-wrapper">
 
                 <div class="footer__social">
+                    <!-- contain BizPhix icon and info -->
                     <div class="footer__social-top">
                         <div class="footer__logo-container">
+                            <!-- Bizphix logo in footer area -->
                             <img class="footer__logo" src="assets/img//svg/Logo.svg" alt="footer logo">
                         </div>
                         <p class="footer__info">Discover the essence of timeless
                             fashion and make a statement with our collection.
                         </p>
                     </div>
+                    <!-- individual social icons container -->
                     <div class="footer__social-logo-container">
                         <ul class="footer__ul">
                             <li class="footer__li">
@@ -691,9 +891,11 @@
                     </div>
                 </div>
 
+                <!-- contian quick links and subcribe section -->
                 <div class="footer__quick-links">
                     <div class="footer__quick-link quick_link1">
                         <h6 class="footer__quick-link-header">Quick Links</h6>
+                        <!-- contain some quick links in ul -->
                         <ul class="footer__quick-ul">
                             <li class="fooer__quick-li"><a class="footer__quick-link-a" href="#">About Us</a></li>
                             <li class="fooer__quick-li"><a class="footer__quick-link-a" href="#">Privacy</a></li>
@@ -701,7 +903,7 @@
                             <li class="fooer__quick-li"><a class="footer__quick-link-a" href="#">Policy</a></li>
                         </ul>
                     </div>
-
+                    <!-- contain some information of contact -->
                     <div class="footer__quick-link quick_link2">
                         <h6 class="footer__quick-link3-header">Contact</h6>
                         <div class="footer__contact-wrapper">
@@ -731,13 +933,13 @@
                     </div>
 
                     <div class="footer__quick-link quick_link3 footer__subscribe">
-                        <!-- 50% -->
                         <p class="footer__subscribe-info">Subscribe for Exclusive
-                            Updates and Offers</p> <!-- 100% -->
+                            Updates and Offers</p>
                         <div class="footer__input">
-                            <!-- 100% -->
+                            <!-- subscribe inpub box bontainer -->
                             <input class="footer__input-box" type="text" placeholder="Enter your email"><!-- 100% -->
                             <div class="footer__send-icon">
+                                <!-- send icon in subscribe section -->
                                 <img src="assets/img/svg/send.svg" alt="send icon">
                             </div>
                         </div>
@@ -746,13 +948,19 @@
 
             </div>
         </div>
-    </section>
+    </footer>
+
+    <p class="bottom__text">© 2024 Bizphix. All rights reserved.</p>
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/jquery.slim.min.js"></script>
     <script src="assets/js/countMe.min.js"></script>
     <script src="assets/js/coutdown.js"></script>
     <script src="assets/js/accrodion.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/magnifi-activator.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/testimonial-activator.js"></script>
 </body>
 
 </html>

@@ -2,84 +2,139 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="utf-8" />
+    <title>Swiper Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
     <style>
-        .icon-container {
-            display: inline-block;
-            transition: transform 0.5s ease-in-out;
+        html,
+        body {
+            position: relative;
+            height: 100%;
         }
 
-        .icon {
-            font-size: 50px;
-            display: inline-block;
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: calc(100% - 40px);
+            /* Adjust the height to account for pagination */
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* .swiper-button-next,
+        .swiper-button-prev {
+            color: #000;
+        } */
+
+        /* Custom Pagination Styles */
+        .swiper-pagination-bullet {
+            background: #000;
+            /* Black bullets */
+            opacity: 0.7;
+            width: 20px;
+            /* Slight transparency */
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #ff0000;
+            /* Red color for active bullet */
+            opacity: 1;
+            /* Fully opaque */
+        }
+
+        .swiper-pagination-bullet:hover {
+            background: #00f;
+            /* Blue on hover */
+        }
+
+        .swiper-pagination {
+            text-align: center;
+            padding-top: 10px;
         }
     </style>
 </head>
 
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rotate Icon</title>
-
-    </head>
-
-    <body>
-        <div class="icon-container">
-            <span class="icon" id="icon"><i class="fa-solid fa-chevron-down faq__down-arrow"></i></span>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
         </div>
-        <button id="rotateButton">Rotate Icon</button>
+        <!-- Add Navigation -->
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    </body>
-
-
-
-
-    <a href="#" class="popup-video w-inline-block w-lightbox" aria-label="open lightbox" aria-haspopup="dialog"><img
-            src="https://assets-global.website-files.com/660504bc4a49dfc45e93a2c1/6608fdc1b3bc4e51680264d3_about-hero-image.jpg"
-            loading="lazy"
-            sizes="(max-width: 479px) 94vw, (max-width: 700px) 96vw, (max-width: 767px) 672px, (max-width: 991px) 48vw, 49vw"
-            srcset="https://assets-global.website-files.com/660504bc4a49dfc45e93a2c1/6608fdc1b3bc4e51680264d3_about-hero-image-p-500.jpg 500w, https://assets-global.website-files.com/660504bc4a49dfc45e93a2c1/6608fdc1b3bc4e51680264d3_about-hero-image.jpg 672w"
-            alt="" class="video-thumbnail">
-        <script type="application/json" class="w-json">{
-        "items": [
-          {
-            "url": "https://www.youtube.com/watch?v=lIqJLpVfSQU",
-            "originalUrl": "https://www.youtube.com/watch?v=lIqJLpVfSQU",
-            "width": 940,
-            "height": 528,
-            "thumbnailUrl": "https://i.ytimg.com/vi/lIqJLpVfSQU/hqdefault.jpg",
-            "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FlIqJLpVfSQU%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DlIqJLpVfSQU&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FlIqJLpVfSQU%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-            "type": "video"
-          }
-        ],
-        "group": ""
-      }</script>
-    </a>
-
-
-
-
-
-    </html>
+    <!-- Initialize Swiper -->
     <script>
-        let currentRotation = 0;
-
-        document.getElementById('rotateButton').addEventListener('click', function () {
-            const icon = document.getElementById('icon');
-            currentRotation += 180;
-            icon.style.transform = `rotate(${currentRotation}deg)`;
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                }
+            }
         });
-
     </script>
 </body>
 
