@@ -2,138 +2,77 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Swiper Demo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-    <!-- Demo styles -->
-    <style>
-        html,
-        body {
-            position: relative;
-            height: 100%;
-        }
-
-        body {
-            background: #eee;
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            color: #000;
-            margin: 0;
-            padding: 0;
-        }
-
-        .swiper {
-            width: 100%;
-            height: calc(100% - 40px);
-            /* Adjust the height to account for pagination */
-        }
-
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* .swiper-button-next,
-        .swiper-button-prev {
-            color: #000;
-        } */
-
-        /* Custom Pagination Styles */
-        .swiper-pagination-bullet {
-            background: #000;
-            /* Black bullets */
-            opacity: 0.7;
-            width: 20px;
-            /* Slight transparency */
-        }
-
-        .swiper-pagination-bullet-active {
-            background: #ff0000;
-            /* Red color for active bullet */
-            opacity: 1;
-            /* Fully opaque */
-        }
-
-        .swiper-pagination-bullet:hover {
-            background: #00f;
-            /* Blue on hover */
-        }
-
-        .swiper-pagination {
-            text-align: center;
-            padding-top: 10px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <!-- Swiper -->
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
+
+    <section class="clients">
+        <div class="container">
+            <div class="client__content-wrapper autoplay">
+                <div class="client__img-container">
+                    <a href="#" class="client__link">
+                        <!-- brand image -->
+                        <img src="assets/img/clients/Adobe.png" alt="our client">
+                    </a>
+                </div>
+                <div class="client__img-container">
+                    <a href="#" class="client__link">
+                        <!-- brand image -->
+                        <img src="assets/img/clients/AT.png" alt="our client">
+                    </a>
+                </div>
+                <div class="client__img-container">
+                    <a href="#" class="client__link">
+                        <!-- brand image -->
+                        <img src="assets/img/clients/Cisco.png" alt="our client">
+                    </a>
+                </div>
+                <div class="client__img-container">
+                    <a href="#" class="client__link">
+                        <!-- brand image -->
+                        <img src="assets/img/clients/Google.png" alt="our client">
+                    </a>
+                </div>
+                <div class="client__img-container">
+                    <a href="#" class="client__link">
+                        <!-- brand image -->
+                        <img src="assets/img/clients/hp.png" alt="our client">
+                    </a>
+                </div>
+                <div class="client__img-container">
+                    <a href="#" class="client__link">
+                        <!-- brand image -->
+                        <img src="assets/img/clients/Microsoft.png" alt="our client">
+                    </a>
+                </div>
+                <div class="client__img-container">
+                    <a href="#" class="client__link">
+                        <!-- brand image -->
+                        <img src="assets/img/clients/SAP.png" alt="our client">
+                    </a>
+                </div>
+            </div>
         </div>
-        <!-- Add Navigation -->
-        <!-- <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div> -->
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
+    </section>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                // when window width is >= 320px
-                320: {
-                    slidesPerView: 1,
-                    spaceBetween: 10
-                },
-                // when window width is >= 480px
-                480: {
-                    slidesPerView: 2,
-                    spaceBetween: 20
-                },
-                // when window width is >= 640px
-                640: {
-                    slidesPerView: 3,
-                    spaceBetween: 30
-                }
-            }
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.autoplay').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
         });
     </script>
 </body>

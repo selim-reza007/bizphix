@@ -324,15 +324,6 @@ img {
     right: 0;
 }
 
-/* .benefit__background-img {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    background: url(../img/svg/benefit_background.svg) no-repeat;
-    height: 100%;
-    width: 14%;
-} */
-
 .benefit__card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -384,7 +375,9 @@ img {
                 line-height: 57.6px;
                 text-align: center;
                 color: #0D0B19;
-                margin-bottom: 60px;
+                max-width: 690px;
+                margin: 0 auto;
+
             }
 
             .service__card-container {
@@ -392,6 +385,7 @@ img {
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 grid-template-rows: auto;
                 gap: 16px;
+                margin-top: 60px;
 
                 .service__card {
                     position: relative;
@@ -497,21 +491,25 @@ img {
     padding: 160px 0 100px 0;
 }
 
-.promotion__h1 {
-    color: #0D0B19;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 120%;
-}
 
 .promotion__text-container {
     display: flex;
+    gap: 40px;
 }
 
 .promotion__heading,
 .promotion__info {
     width: 50%;
 }
+
+.promotion__h1 {
+    color: #0D0B19;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120%;
+    max-width: 576px;
+}
+
 
 .promotion__heading h1 span {
     color: #583CEA;
@@ -541,12 +539,12 @@ img {
 
 .clients {
     padding: 0 40px;
-    /* margin-bottom: 160px; */
 }
 
 .client__content-wrapper {
     display: flex;
     justify-content: space-between;
+    margin-left: 150px;
 }
 
 .approach {
@@ -599,8 +597,6 @@ img {
                         line-height: 26.4px;
                         color: #0D0B19;
                         margin: 24px 0 8px 0;
-                        /* margin-top: 24px;
-                        margin-bottom: 8px; */
                     }
 
                     .approach__card-info {
@@ -1113,6 +1109,11 @@ img {
         height: 70%;
     }
 
+    .promotion__h1 {
+        font-size: 44px;
+        line-height: 55.5px;
+    }
+
     .joinus {
         & .joinus__content-wrapper {
             .joinus__map {
@@ -1126,12 +1127,25 @@ img {
     .hero__video video {
         height: 50%;
     }
+
+    .promotion {
+        padding: 140px 0 90px 0;
+    }
+
+    .promotion__h1 {
+        font-size: 40px;
+        /* max-width: ; */
+    }
 }
 
 @media (max-width: 1115px) {
     .statistics__content-wrapper {
         grid-template-columns: repeat(2, 193px);
         row-gap: 26px;
+    }
+
+    .client__content-wrapper {
+        margin-left: 120px;
     }
 
     .footer {
@@ -1300,6 +1314,10 @@ img {
         line-height: 60px;
     }
 
+    .promotion {
+        padding: 120px 0 90px 0;
+    }
+
     .approach {
         padding: 120px 0;
 
@@ -1340,6 +1358,9 @@ img {
         height: 30%;
     }
 
+    .clients {
+        padding: 0 0px;
+    }
 
     .faq {
         .container {
@@ -1433,6 +1454,20 @@ img {
         height: 20%;
     }
 
+    .service {
+        padding: 140px 0;
+
+        .service__container {
+            .service__content-wrapper {
+                .service__heading {
+                    font-size: 42px;
+                    line-height: 53.6px;
+                    max-width: 690px;
+                }
+            }
+        }
+    }
+
     .approach {
         padding: 100px 0;
     }
@@ -1452,6 +1487,20 @@ img {
         }
     }
 
+    .promotion {
+        padding: 100px 0 80px 0;
+    }
+
+    .promotion__h1 {
+        font-size: 36px;
+        line-height: 43.2px;
+        /* max-width: 500px; */
+    }
+
+    .client__content-wrapper {
+        margin-left: 70px;
+    }
+
 
 }
 
@@ -1464,6 +1513,37 @@ img {
 
     .benefit__card-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service {
+        padding: 120px 0;
+
+        .service__container {
+            .service__content-wrapper {
+                .service__heading {
+                    font-size: 38px;
+                    line-height: 51.6px;
+                    max-width: 547px;
+                }
+            }
+        }
+    }
+
+    .promotion {
+        padding: 80px 0 60px 0;
+    }
+
+    .promotion__text-container {
+        flex-direction: column;
+    }
+
+    .promotion__heading,
+    .promotion__info {
+        width: 100%;
+    }
+
+    .client__content-wrapper {
+        margin-left: 40px;
     }
 
     .approach {
@@ -1545,33 +1625,39 @@ img {
 
 }
 
-@media (max-width: 519px) {
+@media (max-width: 575px) {
     .service {
-        & .service__container {
-            & .service__content-wrapper {
-                & .service__card-container {
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    grid-template-rows: auto;
-                    gap: 16px;
+        padding: 120px 0;
+
+        .service__container {
+            .service__content-wrapper {
+                .service__heading {
+                    font-size: 36px;
+                    line-height: 43.2px;
+                    max-width: 518px;
                 }
             }
         }
     }
+}
 
-    /* .approach {
+@media (max-width: 519px) {
+    .service {
+        padding: 100px 0;
 
-        .approach__content-wrapper {
-            .approach__heading {
-                font-size: 36px;
-                line-height: 43.2px;
-                text-align: start;
-                max-width: 436px;
-                margin: 0;
+        & .service__container {
+            & .service__content-wrapper {
+                & .service__card-container {
+                    margin-top: 48px;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: auto;
+                    gap: 16px;
+
+                }
             }
-
         }
-    } */
+    }
 
     .approach {
         .approach__content-wrapper {
@@ -1594,6 +1680,10 @@ img {
                 }
             }
         }
+    }
+
+    .client__content-wrapper {
+        margin-left: 0px;
     }
 
     .testimonial {
@@ -1662,6 +1752,29 @@ img {
         font-size: 48px;
         font-weight: 600;
         line-height: 48px;
+    }
+
+    .service {
+        padding: 80px 0;
+
+        & .service__container {
+            & .service__content-wrapper {
+                .service__heading {
+                    max-width: 326px;
+                }
+
+                & .service__card-container {
+                    .service__card {
+                        .service__info-container {
+                            .service__name {
+                                font-size: 24px;
+                                line-height: 31.2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .approach {
