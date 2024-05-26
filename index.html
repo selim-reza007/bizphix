@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
@@ -68,12 +69,14 @@
                     <img class="header__mobile-logo" src="assets/img/Logo.png" alt="logo in mobile view">
                 </a>
                 <div class="header__search-container-m">
-                    <i class="fa-solid fa-magnifying-glass .header__search-m"></i>
-                    <i class="fa-solid fa-bars header__menu-open-m"></i>
-                    <i class="fa-solid fa-xmark header__mobile-menu-close display-nothing"></i>
+                    <i class="fa-solid fa-magnifying-glass header__search-m"></i>
+                    <div id="header__mobile-menu-open-close">
+                        <i class="fa-solid fa-bars header__menu-open-m"></i>
+                        <i class="fa-solid fa-xmark header__mobile-menu-close display-nothing"></i>
+                    </div>
                 </div>
                 <!-- links -->
-                <div class="header__menu-m display-nothing">
+                <div id="mobile-menu-header" class="header__menu-m">
                     <ul class="header__ul-m">
 
                         <li class="header__li-m">
@@ -84,11 +87,11 @@
                             <a class="header__link-m" href="#">About</a>
                         </li>
 
-                        <li class="header__li-m dropdown-open-close">
+                        <li id="header__mobile-dropdown-OC" class="header__li-m dropdown-open-close">
                             <a class="header__link-m" href="#">Services
                                 <i class="fa-solid fa-angle-down"></i></a>
                             <!-- dropdown -->
-                            <ul class="header__dropdown-m display-nothing">
+                            <ul id="header__mobile-dropdown" class="header__dropdown-m">
                                 <li class="header__li-m"><a class="header__link-m" href="#">Clipping Path</a></li>
                                 <li class="header__li-m"><a class="header__link-m" href="#">Image Masking</a></li>
                                 <li class="header__li-m"><a class="header__link-m" href="#">Ghost Mannequin</a></li>
@@ -173,7 +176,7 @@
                     <!-- single statistics box -->
                     <div class="statistics__box">
                         <div class="statistics__number">
-                            <p class="statistics__p num1">3000</p>
+                            <h2 class="statistics__p num1">3000</h2>
                             <!-- plus or % icon -->
                             <img class="statistics__icon" src="assets/img/svg/+.svg" alt="plus icon">
                         </div>
@@ -182,7 +185,7 @@
                     <!-- single statistics box -->
                     <div class="statistics__box">
                         <div class="statistics__number">
-                            <p class="statistics__p num2">90</p>
+                            <h2 class="statistics__p num2">90</h2>
                             <!-- plus or % icon -->
                             <img class="statistics__icon" src="assets/img/svg/%.svg" alt="plus icon">
                         </div>
@@ -191,7 +194,7 @@
                     <!-- single statistics box -->
                     <div class="statistics__box">
                         <div class="statistics__number">
-                            <p class="statistics__p num3">25</p>
+                            <h2 class="statistics__p num3">25</h2>
                             <!-- plus or % icon -->
                             <img class="statistics__icon" src="assets/img/svg/+.svg" alt="plus icon">
                         </div>
@@ -200,7 +203,7 @@
                     <!-- single statistics box -->
                     <div class="statistics__box">
                         <div class="statistics__number">
-                            <p class="statistics__p num4">10</p>
+                            <h2 class="statistics__p num4">10</h2>
                             <!-- plus or % icon -->
                             <img class="statistics__icon" src="assets/img/svg/+.svg" alt="plus icon">
                         </div>
@@ -517,55 +520,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- <section class="clients">
-            <div class="container">
-                <div class="client__content-wrapper">
-                    <div class="client__img-container">
-                        <a href="#" class="client__link">
-                            brand image
-                            <img src="assets/img/clients/Adobe.png" alt="our client">
-                        </a>
-                    </div>
-                    <div class="client__img-container">
-                        <a href="#" class="client__link">
-                            brand image
-                            <img src="assets/img/clients/AT.png" alt="our client">
-                        </a>
-                    </div>
-                    <div class="client__img-container">
-                        <a href="#" class="client__link">
-                            brand image
-                            <img src="assets/img/clients/Cisco.png" alt="our client">
-                        </a>
-                    </div>
-                    <div class="client__img-container">
-                        <a href="#" class="client__link">
-                            brand image
-                            <img src="assets/img/clients/Google.png" alt="our client">
-                        </a>
-                    </div>
-                    <div class="client__img-container">
-                        <a href="#" class="client__link">
-                            brand image
-                            <img src="assets/img/clients/hp.png" alt="our client">
-                        </a>
-                    </div>
-                    <div class="client__img-container">
-                        <a href="#" class="client__link">
-                            brand image
-                            <img src="assets/img/clients/Microsoft.png" alt="our client">
-                        </a>
-                    </div>
-                    <div class="client__img-container">
-                        <a href="#" class="client__link">
-                            brand image
-                            <img src="assets/img/clients/SAP.png" alt="our client">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section> -->
 
         <!-- approach section combine of info and cover image -->
         <section class="approach">
@@ -1006,7 +960,7 @@
     <p class="bottom__text">© 2024 Bizphix. All rights reserved.</p>
 
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/jquery.slim.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/countMe.min.js"></script>
     <script src="assets/js/coutdown.js"></script>
     <script src="assets/js/accrodion.js"></script>
@@ -1016,6 +970,7 @@
     <script src="assets/js/testimonial-activator.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/mobile.menu-smooth-activator.js"></script>
 </body>
 
 </html>
