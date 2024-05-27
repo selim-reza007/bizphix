@@ -14,9 +14,7 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
@@ -25,100 +23,64 @@
     <!-- header/top navigation -->
     <header class="header">
         <div class="container">
-            <!-- Desktop heading -->
-            <div class="header__content-wrapper header__desktop">
+            <div class="header__content-wrapper">
                 <div class="header__logo">
-                    <a href="#"><img src="assets/img/Logo.png" alt="Bizphix logo"></a>
+                    <img src="assets/img/Logo.png" alt="header logo" class="header__logo-img">
                 </div>
-                <!-- containing links  -->
-                <div class="header__navigation-container">
-                    <ul class="header__navigation">
-                        <li class="header__li"><a class="header__link" href="#">Home</a></li>
-                        <li class="header__li"><a class="header__link" href="#">About</a></li>
-                        <li class="header__li"><a class="header__link" href="#">Services &nbsp;
-                                <i class="fa-solid fa-angle-down"></i></a>
-                            <!-- dropdown -->
-                            <ul class="header__dropdown">
-                                <li class="header__li"><a class="header__link" href="#">Clipping Path</a></li>
-                                <li class="header__li"><a class="header__link" href="#">Image Masking</a></li>
-                                <li class="header__li"><a class="header__link" href="#">Ghost Mannequin</a></li>
-                                <li class="header__li"><a class="header__link" href="#">Jewelry Retouching</a></li>
-                                <li class="header__li"><a class="header__link" href="#">Shadow Services</a></li>
-                                <li class="header__li"><a class="header__link" href="#">Product Photo Retouching</a>
+                <div class="header__navigation">
+                    <ul class="header__ul">
+                        <li class="header__li">
+                            <a href="#" class="header__link">Home</a>
+                        </li>
+                        <li class="header__li">
+                            <a href="#" class="header__link">About</a>
+                        </li>
+                        <li class="header__li header__dropdown">
+                            <a href="#" class="header__link">Services
+                                <i class="fa-solid fa-chevron-down header__dropdown-icon"></i></a>
+                            <ul class="header__li-dropdown">
+                                <li class="header__li-list">
+                                    <a class="header__li-link" href="#">Clipping Path</a>
+                                </li>
+                                <li class="header__li-list">
+                                    <a class="header__li-link" href="#">Image Masking</a>
+                                </li>
+                                <li class="header__li-list">
+                                    <a class="header__li-link" href="#">Ghost Mannequin</a>
+                                </li>
+                                <li class="header__li-list">
+                                    <a class="header__li-link" href="#">Jewelry Retouching</a>
+                                </li>
+                                <li class="header__li-list">
+                                    <a class="header__li-link" href="#">Shadow Services</a>
+                                </li>
+                                <li class="header__li-list">
+                                    <a class="header__li-link" href="#">Product Photo Retouching</a>
                                 </li>
                             </ul>
                         </li>
-
-                        <li class="header__li"><a class="header__link" href="#">Protfolio</a></li>
-                        <li class="header__li"><a class="header__link" href="#">Pricing</a></li>
-                        <li class="header__li"><a class="header__link" href="#">Blog</a></li>
+                        <li class="header__li">
+                            <a href="#" class="header__link">Protfolio</a>
+                        </li>
+                        <li class="header__li">
+                            <a href="#" class="header__link">Pricing</a>
+                        </li>
+                        <li class="header__li">
+                            <a href="#" class="header__link">Blog</a>
+                        </li>
                     </ul>
                 </div>
-                <!-- header search section -->
-                <div class="header__search-container">
-                    <div class="header__search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                    <a href="#" class="btn btn-blue btn-search">Get Started</a>
-                </div>
-            </div>
-
-            <!-- mobile header -->
-            <div class="header__mobile-menu-wrapper">
-                <a href="#">
-                    <img class="header__mobile-logo" src="assets/img/Logo.png" alt="logo in mobile view">
-                </a>
-                <div class="header__search-container-m">
-                    <i class="fa-solid fa-magnifying-glass header__search-m"></i>
-                    <div id="header__mobile-menu-open-close">
-                        <i class="fa-solid fa-bars header__menu-open-m"></i>
-                        <i class="fa-solid fa-xmark header__mobile-menu-close display-nothing"></i>
+                <div class="header__right header__searh">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <div class="header__get-icon">
+                        <a class="btn btn-blue" href="#">Get Started</a>
+                        <div class="header__open-close">
+                            <i class="fa-solid fa-bars header__menu-open"></i>
+                            <i class="fa-solid fa-xmark header__menu-close"></i>
+                        </div>
                     </div>
                 </div>
-                <!-- links -->
-                <div id="mobile-menu-header" class="header__menu-m">
-                    <ul class="header__ul-m">
-
-                        <li class="header__li-m">
-                            <a class="header__link-m" href="#">Home</a>
-                        </li>
-
-                        <li class="header__li-m">
-                            <a class="header__link-m" href="#">About</a>
-                        </li>
-
-                        <li id="header__mobile-dropdown-OC" class="header__li-m dropdown-open-close">
-                            <a class="header__link-m" href="#">Services
-                                <i class="fa-solid fa-angle-down"></i></a>
-                            <!-- dropdown -->
-                            <ul id="header__mobile-dropdown" class="header__dropdown-m">
-                                <li class="header__li-m"><a class="header__link-m" href="#">Clipping Path</a></li>
-                                <li class="header__li-m"><a class="header__link-m" href="#">Image Masking</a></li>
-                                <li class="header__li-m"><a class="header__link-m" href="#">Ghost Mannequin</a></li>
-                                <li class="header__li-m"><a class="header__link-m" href="#">Jewelry Retouching</a></li>
-                                <li class="header__li-m"><a class="header__link-m" href="#">Shadow Services</a></li>
-                                <li class="header__li-m"><a class="header__link-m" href="#">Product Photo Retouching</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="header__li-m">
-                            <a class="header__link-m" href="#">Protfolio</a>
-                        </li>
-
-                        <li class="header__li-m">
-                            <a class="header__link-m" href="#">Pricing</a>
-                        </li>
-
-                        <li class="header__li-m">
-                            <a class="header__link-m" href="#">Blog</a>
-                        </li>
-
-
-                    </ul>
-                </div>
             </div>
-
         </div>
         <p class="horizontalLine"></p>
     </header>
@@ -155,12 +117,13 @@
                     <!-- hero image -->
                     <div class="hero__img">
                         <div class="hero__img-container">
-                            <img src="assets/img/hero_img.png" alt="hero image">
-                            <div class="hero__play">
-                                <a class="video" href="https://www.youtube.com/watch?v=eACEHVceYl0">
+                            <a class="video" href="https://www.youtube.com/watch?v=eACEHVceYl0">
+                                <img src="assets/img/hero_img.png" alt="hero image">
+
+                                <div class="hero__play">
                                     <img class="hero__play-img" src="assets/img/svg/play_buton.svg" alt="play button">
-                                </a>
-                            </div>
+                                </div>
+                            </a>
                         </div>
 
                     </div>
@@ -960,15 +923,13 @@
     <p class="bottom__text">© 2024 Bizphix. All rights reserved.</p>
 
     <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/countMe.min.js"></script>
     <script src="assets/js/coutdown.js"></script>
     <script src="assets/js/accrodion.js"></script>
     <script src="assets/js/magnifi-activator.js"></script>
     <script src="assets/js/testimonial-activator.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/mobile.menu-smooth-activator.js"></script>
     <script src="assets/js/main.js"></script>
 </body>

@@ -1,3 +1,6 @@
+
+
+
 $('.video').magnificPopup({
     type: 'iframe',
     iframe: {
