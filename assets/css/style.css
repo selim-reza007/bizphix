@@ -78,10 +78,10 @@ img {
 
 .header {
     background: #fff;
+    border-bottom: 1px solid #eee;
 
     .container {
         .header__content-wrapper {
-            padding: 20px 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -97,7 +97,8 @@ img {
                     gap: 32px;
 
                     .header__li {
-                        /* padding: 0px 0px; */
+                        /* here will be padding */
+                        padding: 31px 0px;
 
                         .header__link {
                             display: flex;
@@ -116,8 +117,8 @@ img {
 
                         .header__li-dropdown {
                             position: absolute;
-                            /* left: 0;
-                            top: 0; */
+                            /* left: 0; */
+                            top: 55px;
                             list-style: none;
                             opacity: 0;
                             visibility: hidden;
@@ -184,12 +185,6 @@ img {
 
 
         }
-    }
-
-    .horizontalLine {
-        height: 1px;
-        background-color: #eee;
-        width: 100vw;
     }
 }
 
@@ -1339,61 +1334,55 @@ img {
 
 }
 
-
-@media (max-width: 940px) {
-
+@media (max-width: 991px) {
     .header {
         background: #fff;
+        position: relative;
 
         .container {
             .header__content-wrapper {
-                flex-direction: column;
 
-                .header__logo {
-                    .header__logo-img {}
-                }
+                .header__logo {}
 
                 .header__navigation {
+                    position: absolute;
+                    top: 101%;
+                    left: 0;
+                    background-color: #fff;
+                    width: 100%;
+                    z-index: 10;
+                    display: none;
+
                     .header__ul {
-                        list-style: none;
-                        display: flex;
-                        gap: 32px;
+                        display: block;
 
                         .header__li {
-                            /* padding: 0px 0px; */
+                            padding: 24px 0px;
+                            display: block;
+                            border-bottom: 1px solid #eee;
 
                             .header__link {
-                                display: flex;
-                                gap: 4px;
-                                align-items: center;
-                                position: relative;
-                                font-family: "Manrope", sans-serif;
-                                font-weight: 500;
-                                line-height: 25.6px;
-                                color: #5D5C65;
-
-                                &:hover {
-                                    color: #583CEA;
-                                }
+                                justify-content: space-between;
+                                padding: 0 24px;
                             }
 
                             .header__li-dropdown {
-                                position: absolute;
-                                /* left: 0;
-                                top: 0; */
-                                list-style: none;
-                                opacity: 0;
-                                visibility: hidden;
-                                min-width: 300px;
-                                background-color: #fff;
-                                border-radius: 8px;
-                                z-index: 10;
-                                padding: 20px 10px;
-                                margin-top: 31px;
-                                box-shadow: 0px 3px 5px -1px #ccc;
+                                /* display: none; */
+                                /*Changes is made*/
+                                position: static;
+                                opacity: 1;
+                                visibility: visible;
+                                background-color: transparent;
+                                border-radius: 0;
+                                padding: 0px;
+                                margin: 0px;
+                                box-shadow: none;
+                                padding-top: 24px;
 
                                 .header__li-list {
-                                    padding: 10px 8px;
+                                    border-bottom: 1px solid #eee;
+                                    padding: 24px;
+                                    padding-left: 52px;
 
                                     .header__li-link {
                                         display: block;
@@ -1406,18 +1395,32 @@ img {
                                             color: #583CEA;
                                         }
                                     }
+
+                                    &.first-dropdown-child {
+                                        border-top: 1px solid #eee;
+                                    }
+
+                                    &.last-dropdown-child {
+                                        padding-bottom: 0px;
+                                        border-bottom: none;
+                                    }
                                 }
                             }
 
                             &.header__dropdown {
+                                border-bottom: none;
+                                padding-bottom: 24px;
+
                                 &:hover {
                                     .header__li-dropdown {
                                         visibility: visible;
                                         opacity: 1;
                                     }
                                 }
+                            }
 
-
+                            &.list-after-dropdown {
+                                border-top: 1px solid #eee;
                             }
                         }
                     }
@@ -1443,7 +1446,6 @@ img {
                             }
 
                             .header__menu-close {
-                                display: none;
                                 background-color: #E2DFFB;
                                 padding: 8px;
                                 border-radius: 4px;
@@ -1456,9 +1458,12 @@ img {
 
             }
         }
-
-        .horizontalLine {}
     }
+}
+
+@media (max-width: 940px) {
+
+
 
     .hero__video video {
         height: 30%;
