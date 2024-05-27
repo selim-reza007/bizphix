@@ -77,9 +77,15 @@ img {
 }
 
 .header {
-    position: fixed;
     background-color: #fff;
-    z-index: 100;
+}
+
+.header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 .header__content-wrapper {
@@ -98,7 +104,6 @@ img {
 
 .header__navigation {
     display: flex;
-    /* gap: 32px; */
 }
 
 .header__li {
