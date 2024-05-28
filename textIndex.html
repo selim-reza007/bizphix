@@ -2,129 +2,118 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Demo styles -->
+    <style>
+
+        .swiper-slide {
+            /* text-align: center;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+
+        .swiper-slide div {
+            
+        }
+
+        .clients {
+            margin-top: 50px;
+        }
+    </style>
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <!-- Desktop heading -->
-            <div class="header__content-wrapper header__desktop">
-                <div class="header__logo">
-                    <a href="#"><img src="assets/img/Logo.png" alt="Bizphix logo"></a>
-                </div>
-                <!-- containing links  -->
-                <div class="header__navigation-container">
-                    <ul class="header__navigation">
-                        <li class="header__li"><a class="header__link" href="#">Home</a></li>
-                        <li class="header__li"><a class="header__link" href="#">About</a></li>
-                        <li class="header__li"><a class="header__link" href="#">Services &nbsp;
-                                <i class="fa-solid fa-angle-down"></i></a>
-                            <!-- dropdown -->
-                            <ul class="header__dropdown">
-                                <li class="header__li"><a class="header__link" href="#">Clipping Path</a></li>
-                                <li class="header__li"><a class="header__link" href="#">Image Masking</a></li>
-                                <li class="header__li"><a class="header__link" href="#">Ghost Mannequin</a></li>
-                                <li class="header__li"><a class="header__link" href="#">Jewelry Retouching</a></li>
-                                <li class="header__li"><a class="header__link" href="#">Shadow Services</a></li>
-                                <li class="header__li"><a class="header__link" href="#">Product Photo Retouching</a>
-                                </li>
-                            </ul>
-                        </li>
 
-                        <li class="header__li"><a class="header__link" href="#">Protfolio</a></li>
-                        <li class="header__li"><a class="header__link" href="#">Pricing</a></li>
-                        <li class="header__li"><a class="header__link" href="#">Blog</a></li>
-                    </ul>
-                </div>
-                <!-- header search section -->
-                <div class="header__search-container">
-                    <div class="header__search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+
+    <section class="clients">
+        <div class="container swiper mySwiper">
+            <div class="client__content-wrapper swiper-wrapper">
+
+                <div class="client__img-container swiper-slide">
+                    <div class="slide-image-container">
+                        <a href="#" class="client__link">
+                            <img src="assets/img/clients/Adobe.png" alt="our client">
+                        </a>
                     </div>
-                    <a href="#" class="btn btn-blue btn-search">Get Started</a>
-                </div>
-            </div>
-
-            <!-- mobile header -->
-            <div class="header__mobile-menu-wrapper">
-                <a href="#">
-                    <img class="header__mobile-logo" src="assets/img/Logo.png" alt="logo in mobile view">
-                </a>
-                <div class="header__search-container-m">
-                    <i class="fa-solid fa-magnifying-glass header__search-m"></i>
-                    <div id="header__mobile-menu-open-close">
-                        <i class="fa-solid fa-bars header__menu-open-m"></i>
-                        <i class="fa-solid fa-xmark header__mobile-menu-close display-nothing"></i>
+                    <div class="slide-image-container">
+                        <a href="#" class="client__link">
+                            <img src="assets/img/clients/AT.png" alt="our client">
+                        </a>
+                    </div>
+                    <div class="slide-image-container">
+                        <a href="#" class="client__link">
+                            <img src="assets/img/clients/Cisco.png" alt="our client">
+                        </a>
                     </div>
                 </div>
-                <!-- links -->
-                <div id="mobile-menu-header" class="header__menu-m">
-                    <ul class="header__ul-m">
 
-                        <li class="header__li-m">
-                            <a class="header__link-m" href="#">Home</a>
-                        </li>
-
-                        <li class="header__li-m">
-                            <a class="header__link-m" href="#">About</a>
-                        </li>
-
-                        <li id="header__mobile-dropdown-OC" class="header__li-m dropdown-open-close">
-                            <a class="header__link-m" href="#">Services
-                                <i class="fa-solid fa-angle-down"></i></a>
-                            <!-- dropdown -->
-                            <ul id="header__mobile-dropdown" class="header__dropdown-m">
-                                <li class="header__li-m"><a class="header__link-m" href="#">Clipping Path</a></li>
-                                <li class="header__li-m"><a class="header__link-m" href="#">Image Masking</a></li>
-                                <li class="header__li-m"><a class="header__link-m" href="#">Ghost Mannequin</a></li>
-                                <li class="header__li-m"><a class="header__link-m" href="#">Jewelry Retouching</a></li>
-                                <li class="header__li-m"><a class="header__link-m" href="#">Shadow Services</a></li>
-                                <li class="header__li-m"><a class="header__link-m" href="#">Product Photo Retouching</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="header__li-m">
-                            <a class="header__link-m" href="#">Protfolio</a>
-                        </li>
-
-                        <li class="header__li-m">
-                            <a class="header__link-m" href="#">Pricing</a>
-                        </li>
-
-                        <li class="header__li-m">
-                            <a class="header__link-m" href="#">Blog</a>
-                        </li>
-
-
-                    </ul>
+                <div class="client__img-container swiper-slide">
+                    <div class="slide-image-container">
+                        <a href="#" class="client__link">
+                            <img src="assets/img/clients/Google.png" alt="our client">
+                        </a>
+                    </div>
+                    <div class="slide-image-container">
+                        <a href="#" class="client__link">
+                            <img src="assets/img/clients/hp.png" alt="our client">
+                        </a>
+                    </div>
+                    <div class="slide-image-container">
+                        <a href="#" class="client__link">
+                            <img src="assets/img/clients/Microsoft.png" alt="our client">
+                        </a>
+                    </div>
                 </div>
-            </div>
 
+                <div class="client__img-container swiper-slide">
+                    <div class="slide-image-container">
+                        <a href="#" class="client__link">
+                            <img src="assets/img/clients/SAP.png" alt="our client">
+                        </a>
+                    </div>
+                    <div class="slide-image-container">
+                        <a href="#" class="client__link">
+                            <img src="assets/img/clients/Adobe.png" alt="our client">
+                        </a>
+                    </div>
+                    <div class="slide-image-container">
+                        <a href="#" class="client__link">
+                            <img src="assets/img/clients/AT.png" alt="our client">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <p class="horizontalLine"></p>
-    </header>
+    </section>
 
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/mobile.main.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
     <script>
-        $(document).ready(function () {
-            $("#header__mobile-menu-open-close").click(function () {
-                $("#mobile-menu-header").slideToggle("fast");
-            });
-        });
-
-        $(document).ready(function () {
-            $("#header__mobile-dropdown-OC").click(function () {
-                $("#header__mobile-dropdown").slideToggle("slow");
-            });
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                // el: ".swiper-pagination",
+                // clickable: true,
+            },
+            navigation: {
+                // nextEl: ".swiper-button-next",
+                // prevEl: ".swiper-button-prev",
+            },
         });
     </script>
 </body>

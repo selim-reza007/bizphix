@@ -21,60 +21,62 @@
 
 <body>
     <!-- header/top navigation -->
-    <header class="header">
+    <header class="header header-noScrolled">
         <div class="container">
             <div class="header__content-wrapper">
                 <div class="header__logo">
                     <img src="assets/img/Logo.png" alt="header logo" class="header__logo-img">
                 </div>
-                <div class="header__navigation">
-                    <ul class="header__ul">
-                        <li class="header__li">
+                <div class="header__navigation" id="header__menu">
+                    <ul class="header__list-wrapper">
+                        <li class="header__list">
                             <a href="#" class="header__link">Home</a>
                         </li>
-                        <li class="header__li">
+                        <li class="header__list">
                             <a href="#" class="header__link">About</a>
                         </li>
-                        <li class="header__li header__dropdown">
-                            <a href="#" class="header__link">Services
+                        <li class="header__list header__dropdown">
+                            <a href="#" class="header__link" id="dropdown-link">Services
                                 <i class="fa-solid fa-chevron-down header__dropdown-icon"></i></a>
-                            <ul class="header__li-dropdown display-nothing">
-                                <li class="header__li-list first-dropdown-child">
-                                    <a class="header__li-link" href="#">Clipping Path</a>
+                            <!-- class="header__li-dropdown display-nothing" -->
+                            <ul class="header__dropdown-wrapper" id="dropdown-list">
+                                <li class="header__dropdown-list first-dropdown-child">
+                                    <a class="header__dropdown-link" href="#">Clipping Path</a>
                                 </li>
-                                <li class="header__li-list">
-                                    <a class="header__li-link" href="#">Image Masking</a>
+                                <!-- header__li-list -->
+                                <li class="header__dropdown-list">
+                                    <a class="header__dropdown-link" href="#">Image Masking</a>
                                 </li>
-                                <li class="header__li-list">
-                                    <a class="header__li-link" href="#">Ghost Mannequin</a>
+                                <li class="header__dropdown-list">
+                                    <a class="header__dropdown-link" href="#">Ghost Mannequin</a>
                                 </li>
-                                <li class="header__li-list">
-                                    <a class="header__li-link" href="#">Jewelry Retouching</a>
+                                <li class="header__dropdown-list">
+                                    <a class="header__dropdown-link" href="#">Jewelry Retouching</a>
                                 </li>
-                                <li class="header__li-list">
-                                    <a class="header__li-link" href="#">Shadow Services</a>
+                                <li class="header__dropdown-list">
+                                    <a class="header__dropdown-link" href="#">Shadow Services</a>
                                 </li>
-                                <li class="header__li-list last-dropdown-child">
-                                    <a class="header__li-link" href="#">Product Photo Retouching</a>
+                                <li class="header__dropdown-list last-dropdown-child">
+                                    <a class="header__dropdown-link" href="#">Product Photo Retouching</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="header__li list-after-dropdown">
+                        <li class="header__list list-after-dropdown">
                             <a href="#" class="header__link">Protfolio</a>
                         </li>
-                        <li class="header__li">
+                        <li class="header__list">
                             <a href="#" class="header__link">Pricing</a>
                         </li>
-                        <li class="header__li">
+                        <li class="header__list">
                             <a href="#" class="header__link">Blog</a>
                         </li>
                     </ul>
                 </div>
                 <div class="header__right header__searh">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <div class="header__get-icon">
+                    <div class="header__btn-wrapper">
                         <a class="btn btn-blue" href="#">Get Started</a>
-                        <div class="header__open-close">
+                        <div class="header__toogle-wrapper" id="mobile-menu-icon">
                             <i class="fa-solid fa-bars header__menu-open"></i>
                             <i class="fa-solid fa-xmark header__menu-close display-nothing"></i>
                         </div>
@@ -91,7 +93,7 @@
             <div class="container">
                 <div class="hero__content-wrapper">
                     <!-- containing heading, info and review -->
-                    <div class="hero__info">
+                    <div class="hero__info-wrapper">
                         <h1 class="hero__title">Wake up to <span class="highlight-blue">perfectly
                                 edited</span> product photos</h1>
                         <p class="hero__description">
@@ -104,7 +106,7 @@
                             <a href="#" class="btn btn-white">Order Now</a>
                         </div>
                         <!-- containing rview section -->
-                        <div class="hero__reviev">
+                        <div class="hero__reviev-container">
                             <div class="hero__review-img">
                                 <img src="assets/img/review.png" alt="Hero review">
                             </div>
@@ -138,7 +140,7 @@
                     <!-- single statistics box -->
                     <div class="statistics__box">
                         <div class="statistics__number">
-                            <h2 class="statistics__p num1">3000</h2>
+                            <h2 class="statistics__content num1">3000</h2>
                             <!-- plus or % icon -->
                             <img class="statistics__icon" src="assets/img/svg/+.svg" alt="plus icon">
                         </div>
@@ -147,7 +149,7 @@
                     <!-- single statistics box -->
                     <div class="statistics__box">
                         <div class="statistics__number">
-                            <h2 class="statistics__p num2">90</h2>
+                            <h2 class="statistics__content num2">90</h2>
                             <!-- plus or % icon -->
                             <img class="statistics__icon" src="assets/img/svg/%.svg" alt="plus icon">
                         </div>
@@ -156,7 +158,7 @@
                     <!-- single statistics box -->
                     <div class="statistics__box">
                         <div class="statistics__number">
-                            <h2 class="statistics__p num3">25</h2>
+                            <h2 class="statistics__content num3">25</h2>
                             <!-- plus or % icon -->
                             <img class="statistics__icon" src="assets/img/svg/+.svg" alt="plus icon">
                         </div>
@@ -165,7 +167,7 @@
                     <!-- single statistics box -->
                     <div class="statistics__box">
                         <div class="statistics__number">
-                            <h2 class="statistics__p num4">10</h2>
+                            <h2 class="statistics__content num4">10</h2>
                             <!-- plus or % icon -->
                             <img class="statistics__icon" src="assets/img/svg/+.svg" alt="plus icon">
                         </div>
@@ -193,7 +195,7 @@
                             </div>
                             <h4 class="benefit__title">Tailored Solutions for
                                 Unique Vision</h4>
-                            <p class="benefit__p">Choose us for your photo retouching needs because we boast a
+                            <p class="benefit__content">Choose us for your photo retouching needs because we boast a
                                 team of highly skilled professionals.</p>
                         </div>
 
@@ -204,7 +206,7 @@
                             </div>
                             <h4 class="benefit__title">Rapid Results But We Don’t
                                 Compromise</h4>
-                            <p class="benefit__p">Choose us for your photo retouching needs because we boast a
+                            <p class="benefit__content">Choose us for your photo retouching needs because we boast a
                                 team of highly skilled professionals.</p>
                         </div>
 
@@ -215,7 +217,7 @@
                             </div>
                             <h4 class="benefit__title">Expertise Beyond Compare
                                 to Others</h4>
-                            <p class="benefit__p">Choose us for your photo retouching needs because we boast a
+                            <p class="benefit__content">Choose us for your photo retouching needs because we boast a
                                 team of highly skilled professionals.</p>
                         </div>
 
@@ -226,7 +228,7 @@
                             </div>
                             <h4 class="benefit__title">Tech-Driven Excellence in
                                 Every Pixel</h4>
-                            <p class="benefit__p">Choose us for your photo retouching needs because we boast a
+                            <p class="benefit__content">Choose us for your photo retouching needs because we boast a
                                 team of highly skilled professionals.</p>
                         </div>
 
@@ -237,7 +239,7 @@
                             </div>
                             <h4 class="benefit__title">Meticulous Quality Control
                                 for Perfection</h4>
-                            <p class="benefit__p">Choose us for your photo retouching needs because we boast a
+                            <p class="benefit__content">Choose us for your photo retouching needs because we boast a
                                 team of highly skilled professionals.</p>
                         </div>
 
@@ -248,7 +250,7 @@
                             </div>
                             <h4 class="benefit__title">Accessible Brilliance at
                                 Affordable Rates</h4>
-                            <p class="benefit__p">Choose us for your photo retouching needs because we boast a
+                            <p class="benefit__content">Choose us for your photo retouching needs because we boast a
                                 team of highly skilled professionals.</p>
                         </div>
 
@@ -405,12 +407,14 @@
             <div class="container">
                 <div class="promotion__content--wrapper">
                     <div class="promotion__text-container">
-                        <div class="promotion__heading">
-                            <h2 class="promotion__h1">We’re Your <span class="highlight-blue">Virtual Photo
-                                    Editing</span> and Design Studio</h2>
+                        <div class="promotion__heading-container">
+                            <h2 class="promotion__heading">
+                                We’re Your <span class="highlight-blue">Virtual Photo
+                                    Editing</span> and Design Studio
+                            </h2>
                         </div>
                         <!-- promotion information container -->
-                        <div class="promotion__info">
+                        <div class="promotion__info-container">
                             <p class="promotion__info-top">
                                 Welcome to Bizphix, your trusted partner in the world of image
                                 processing and enhancement. In an era where visuals speak
@@ -435,50 +439,63 @@
 
         <!-- contain all brans logo -->
         <section class="clients">
-            <div class="container">
-                <div class="client__content-wrapper autoplay">
-                    <div class="client__img-container">
-                        <a href="#" class="client__link">
-                            <!-- brand image -->
-                            <img src="assets/img/clients/Adobe.png" alt="our client">
-                        </a>
+            <div class="container swiper mySwiper-clients">
+                <div class="client__content-wrapper swiper-wrapper">
+
+                    <div class="client__img-container swiper-slide">
+                        <div class="slide-image-container">
+                            <a href="#" class="client__link">
+                                <img src="assets/img/clients/Adobe.png" alt="our client">
+                            </a>
+                        </div>
+                        <div class="slide-image-container">
+                            <a href="#" class="client__link">
+                                <img src="assets/img/clients/AT.png" alt="our client">
+                            </a>
+                        </div>
+                        <div class="slide-image-container">
+                            <a href="#" class="client__link">
+                                <img src="assets/img/clients/Cisco.png" alt="our client">
+                            </a>
+                        </div>
                     </div>
-                    <div class="client__img-container">
-                        <a href="#" class="client__link">
-                            <!-- brand image -->
-                            <img src="assets/img/clients/AT.png" alt="our client">
-                        </a>
+
+                    <div class="client__img-container swiper-slide">
+                        <div class="slide-image-container">
+                            <a href="#" class="client__link">
+                                <img src="assets/img/clients/Google.png" alt="our client">
+                            </a>
+                        </div>
+                        <div class="slide-image-container">
+                            <a href="#" class="client__link">
+                                <img src="assets/img/clients/hp.png" alt="our client">
+                            </a>
+                        </div>
+                        <div class="slide-image-container">
+                            <a href="#" class="client__link">
+                                <img src="assets/img/clients/Microsoft.png" alt="our client">
+                            </a>
+                        </div>
                     </div>
-                    <div class="client__img-container">
-                        <a href="#" class="client__link">
-                            <!-- brand image -->
-                            <img src="assets/img/clients/Cisco.png" alt="our client">
-                        </a>
+
+                    <div class="client__img-container swiper-slide">
+                        <div class="slide-image-container">
+                            <a href="#" class="client__link">
+                                <img src="assets/img/clients/SAP.png" alt="our client">
+                            </a>
+                        </div>
+                        <div class="slide-image-container">
+                            <a href="#" class="client__link">
+                                <img src="assets/img/clients/Adobe.png" alt="our client">
+                            </a>
+                        </div>
+                        <div class="slide-image-container">
+                            <a href="#" class="client__link">
+                                <img src="assets/img/clients/AT.png" alt="our client">
+                            </a>
+                        </div>
                     </div>
-                    <div class="client__img-container">
-                        <a href="#" class="client__link">
-                            <!-- brand image -->
-                            <img src="assets/img/clients/Google.png" alt="our client">
-                        </a>
-                    </div>
-                    <div class="client__img-container">
-                        <a href="#" class="client__link">
-                            <!-- brand image -->
-                            <img src="assets/img/clients/hp.png" alt="our client">
-                        </a>
-                    </div>
-                    <div class="client__img-container">
-                        <a href="#" class="client__link">
-                            <!-- brand image -->
-                            <img src="assets/img/clients/Microsoft.png" alt="our client">
-                        </a>
-                    </div>
-                    <div class="client__img-container">
-                        <a href="#" class="client__link">
-                            <!-- brand image -->
-                            <img src="assets/img/clients/SAP.png" alt="our client">
-                        </a>
-                    </div>
+
                 </div>
             </div>
         </section>
@@ -592,7 +609,7 @@
                                     <img class="testimonial__message-icon2" src="assets/img/svg/testimonial_quote.svg"
                                         alt="testimonail message icon 2">
                                 </div>
-                                <div class="testimonial__customer-info">
+                                <div class="testimonial__customer-info-wrapper">
                                     <div class="testimonial__customer-img">
                                         <!-- customer image -->
                                         <img class="testominial__img" src="assets/img/customer/image-1.png"
@@ -624,7 +641,7 @@
                                     <img class="testimonial__message-icon2" src="assets/img/svg/testimonial_quote.svg"
                                         alt="testimonail message icon 2">
                                 </div>
-                                <div class="testimonial__customer-info">
+                                <div class="testimonial__customer-info-wrapper">
                                     <div class="testimonial__customer-img">
                                         <!-- customer image -->
                                         <img class="testominial__img" src="assets/img/customer/image-2.png"
@@ -656,7 +673,7 @@
                                     <img class="testimonial__message-icon2" src="assets/img/svg/testimonial_quote.svg"
                                         alt="testimonail message icon 2">
                                 </div>
-                                <div class="testimonial__customer-info">
+                                <div class="testimonial__customer-info-wrapper">
                                     <div class="testimonial__customer-img">
                                         <!-- customer image -->
                                         <img class="testominial__img" src="assets/img/customer/image-3.png"
@@ -688,7 +705,7 @@
                                     <img class="testimonial__message-icon2" src="assets/img/svg/testimonial_quote.svg"
                                         alt="testimonail message icon 2">
                                 </div>
-                                <div class="testimonial__customer-info">
+                                <div class="testimonial__customer-info-wrapper">
                                     <div class="testimonial__customer-img">
                                         <!-- customer image -->
                                         <img class="testominial__img" src="assets/img/customer/image-2.png"
@@ -717,7 +734,7 @@
                     <h2 class="faq__heading">Your Comprehensive Guide
                         to Common <span class="highlight-blue">Inquiries</span></h2>
                     <div class="faq__info-conatiner">
-                        <div class="faq__faques">
+                        <div class="faq__container">
                             <!-- single faq section -->
                             <div class="faq__item">
                                 <h5 class="faq__title">What is photo retouching, and how does
@@ -802,7 +819,7 @@
                 <div class="joinus__content-wrapper">
                     <!-- Join us left info section -->
                     <div class="joinus__info">
-                        <h2 class="joinus__h2">
+                        <h2 class="joinus__heading">
                             <span class="highlight-blue">Join and Transform</span>
                             your Possibilities Today!
                         </h2>
@@ -838,20 +855,20 @@
                     </div>
                     <!-- individual social icons container -->
                     <div class="footer__social-logo-container">
-                        <ul class="footer__ul">
-                            <li class="footer__li">
+                        <ul class="footer__icon-wrapper">
+                            <li class="footer__list">
                                 <a class="footer_link" href="#"><i
                                         class="fa-brands fa-facebook-f footer__social-icon"></i></a>
                             </li>
-                            <li class="footer__li">
+                            <li class="footer__list">
                                 <a class="footer_link" href="#"><i
                                         class="fa-brands fa-x-twitter footer__social-icon"></i></a>
                             </li>
-                            <li class="footer__li">
+                            <li class="footer__list">
                                 <a class="footer_link" href="#"><i
                                         class="fa-brands fa-instagram footer__social-icon"></i></a>
                             </li>
-                            <li class="footer__li">
+                            <li class="footer__list">
                                 <a class="footer_link" href="#"><i
                                         class="fa-brands fa-linkedin-in footer__social-icon"></i></a>
                             </li>
@@ -860,15 +877,15 @@
                 </div>
 
                 <!-- contian quick links and subcribe section -->
-                <div class="footer__quick-links">
+                <div class="footer__quick-links-container">
                     <div class="footer__quick-link quick_link1">
                         <h6 class="footer__quick-link-header">Quick Links</h6>
                         <!-- contain some quick links in ul -->
-                        <ul class="footer__quick-ul">
-                            <li class="fooer__quick-li"><a class="footer__quick-link-a" href="#">About Us</a></li>
-                            <li class="fooer__quick-li"><a class="footer__quick-link-a" href="#">Privacy</a></li>
-                            <li class="fooer__quick-li"><a class="footer__quick-link-a" href="#">Carrer</a></li>
-                            <li class="fooer__quick-li"><a class="footer__quick-link-a" href="#">Policy</a></li>
+                        <ul class="footer__quick-items">
+                            <li class="fooer__quick-list"><a class="footer__quick-link-item" href="#">About Us</a></li>
+                            <li class="fooer__quick-list"><a class="footer__quick-link-item" href="#">Privacy</a></li>
+                            <li class="fooer__quick-list"><a class="footer__quick-link-item" href="#">Carrer</a></li>
+                            <li class="fooer__quick-list"><a class="footer__quick-link-item" href="#">Policy</a></li>
                         </ul>
                     </div>
                     <!-- contain some information of contact -->
@@ -920,16 +937,15 @@
     </footer>
 
     <p class="bottom__text">© 2024 Bizphix. All rights reserved.</p>
-
+    <!-- dependencies -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/countMe.min.js"></script>
-    <script src="assets/js/coutdown.js"></script>
-    <script src="assets/js/accrodion.js"></script>
-    <script src="assets/js/magnifi-activator.js"></script>
-    <script src="assets/js/testimonial-activator.js"></script>
-    <script src="assets/js/mobile.menu-smooth-activator.js"></script>
+    <!-- dependencies end -->
+    <!-- activator for all plugin -->
+    <script src="assets/js/custom.js"></script>
+    <!-- activator end -->
     <script src="assets/js/main.js"></script>
 </body>
 
